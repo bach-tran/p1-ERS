@@ -1,0 +1,24 @@
+<app-nav navType='login'></app-nav>
+<div class="container">
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4 mt-3">
+      <form class="border border-dark bg-secondary text-light p-3">
+        <h1 class="display-1">Login</h1>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input [(ngModel)]="username" type="text" name="username" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input [(ngModel)]="password" type="password" name="password" class="form-control">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block" (click)="onClick()">Log in</button>
+        </div>
+      </form>
+      <p class="text-center"><a href="/register">Create an account</a></p>
+    </div>
+    <div class="col-4"></div>
+  </div>
+</div>

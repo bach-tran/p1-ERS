@@ -1,0 +1,55 @@
+package com.revature.controllers;
+
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import java.util.Arrays;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import com.revature.exceptions.InvalidMethodException;
+import com.revature.exceptions.InvalidURIPatternException;
+import com.revature.exceptions.ReadRequestException;
+
+public class LoginControllerTest {
+
+	private HttpServletRequest req;
+	private HttpServletResponse resp;
+	
+	@Before
+	public void setUp() {
+		req = mock(HttpServletRequest.class);
+		resp = mock(HttpServletResponse.class);
+	}
+	
+	@Test(expected=InvalidURIPatternException.class)
+	public void testAdditionalURIPortions() throws InvalidMethodException, InvalidURIPatternException, ReadRequestException {
+		LoginController controller = new LoginController();
+		
+		List<String> portions = Arrays.asList("50", "test");
+		
+		controller.process(req, resp, portions);
+	}
+	
+	@Test
+	public void testZeroPortions() throws InvalidMethodException, InvalidURIPatternException, ReadRequestException {
+		LoginController controller = new LoginController();
+		List<String> portions = Arrays.asList();
+		
+		when(req.getMethod()).thenReturn("POSTT");
+		
+		
+		controller.process(req, resp, portions);
+		verify(req, times(1)).getMethod();
+	}
+
+}

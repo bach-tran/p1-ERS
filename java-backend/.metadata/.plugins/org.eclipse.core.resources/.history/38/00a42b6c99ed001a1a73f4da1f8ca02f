@@ -1,0 +1,26 @@
+package com.revature.services;
+
+import org.apache.log4j.Logger;
+
+import com.revature.controllers.LoginController;
+import com.revature.dao.UserDAO;
+import com.revature.utilities.ConnectionUtility;
+
+public class LoginService {
+
+	private Logger log = Logger.getLogger(LoginService.class);
+	
+	public LoginService() {
+		super();
+	}
+	
+	public boolean login(String username, String password) {
+		UserDAO dao = new UserDAO(ConnectionUtility.getConnection());
+		
+		if (username.equals(password)) {
+			return true;
+		}
+		
+		return false;
+	}
+}

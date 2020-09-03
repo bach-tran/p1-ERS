@@ -1,0 +1,8 @@
+2020-09-02 21:30:04 INFO  LoginController:42 - Attempting to process POST request
+2020-09-02 21:30:56 INFO  LoginController:42 - Attempting to process POST request
+2020-09-02 21:31:13 INFO  LoginController:42 - Attempting to process POST request
+2020-09-02 21:32:55 INFO  LoginController:42 - Attempting to process POST request
+2020-09-02 23:31:44 INFO  LoginController:45 - Processing request
+2020-09-02 23:31:44 INFO  LoginController:45 - Processing request
+2020-09-02 23:31:44 INFO  LoginController:45 - Processing request
+2020-09-02 23:31:44 INFO  LoginController:45 - Processing request

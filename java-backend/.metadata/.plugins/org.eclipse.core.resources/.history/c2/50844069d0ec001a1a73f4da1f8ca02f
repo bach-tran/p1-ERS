@@ -1,0 +1,49 @@
+package com.revature.controllers;
+
+import java.io.IOException;
+import java.util.Arrays;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class FrontController extends HttpServlet {
+	
+	public FrontController() {
+		super();
+	}
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		final String URI = req.getRequestURI().replace("/project1", "");
+		System.out.println(URI);
+		
+		if (URI.charAt(0) != ('/')) {
+			resp.setStatus(400);
+			return;
+		}
+		
+		String[] splitURI = URI.substring(1).split("/");
+		final String resource = splitURI[0];
+		System.out.println(resource);
+		
+		String[] portions = new String[splitURI.length - 1];
+		for (int i = 0; i < splitURI.length - 1; i++) {
+			if (splitURI[i+1].equals("")) {
+				resp.setStatus(400);
+				return;
+			}
+			portions[i] = splitURI[i+1];
+		}
+		
+		System.out.println(Arrays.asList(portions));
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(req, resp);
+	}
+	
+}

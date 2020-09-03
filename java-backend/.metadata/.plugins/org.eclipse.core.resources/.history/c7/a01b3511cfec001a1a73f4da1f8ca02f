@@ -1,0 +1,32 @@
+package com.revature.controllers;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class FrontController extends HttpServlet {
+	
+	public FrontController() {
+		super();
+	}
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		final String URI = req.getRequestURI();
+		System.out.println(URI);
+		
+		if (URI.charAt(0) != ('/')) {
+			
+		}
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(req, resp);
+	}
+	
+}
