@@ -13,7 +13,6 @@ export class AuthenticationService {
   constructor(private http: HttpClient, private router: Router) { }
 
   public async login(user: string, pass: string): Promise<User> {
-    try {
       const response: Promise<User> = this.http.post<User>('http://localhost:8080/project1/login', {
         username: user,
         password: pass
@@ -22,10 +21,15 @@ export class AuthenticationService {
       }).toPromise();
 
       return response;
-    } catch (error) {
-      console.log(error);
-      alert('Error logging in!');
-    }
+  }
+
+  public async logout(): Promise<void> {
+    const response: Promise<void> = this.http.post<void>('http://localhost:8080/project1/logout', {},
+    {
+      withCredentials: true
+    }).toPromise();
+
+    return response;
   }
 
   public async checkAuthorization(): Promise<boolean> {

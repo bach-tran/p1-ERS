@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { EmployeeHomeComponent } from './employee-home/employee-home.component';
 import { EmpHomeNavComponent } from './nav/emp-home-nav/emp-home-nav.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { EmpHomeNavComponent } from './nav/emp-home-nav/emp-home-nav.component';
     LoginComponent,
     LoginNavComponent,
     EmployeeHomeComponent,
-    EmpHomeNavComponent
+    EmpHomeNavComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,

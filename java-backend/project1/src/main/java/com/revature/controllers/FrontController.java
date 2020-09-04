@@ -19,11 +19,13 @@ import com.revature.exceptions.ReadRequestException;
 public class FrontController extends HttpServlet {
 	
 	private LoginController loginController;
+	private LogoutController logoutController;
 	private Logger log = Logger.getLogger(FrontController.class);
 	
 	public FrontController() {
 		super();
 		loginController = new LoginController();
+		logoutController = new LogoutController();
 	}
 
 	@Override
@@ -56,11 +58,15 @@ public class FrontController extends HttpServlet {
 				log.info("LoginController invoked");
 				loginController.process(req, resp, portions);
 				break;
+			case "logout":
+				log.info("LogoutController invoked");
+				logoutController.process(req, resp, portions);
+				break;
 			default:
 				resp.setStatus(400);
 				return;
 			}
-		} catch (InvalidMethodException | InvalidURIPatternException | ReadRequestException | LoginException e) {
+		} catch (InvalidMethodException | InvalidURIPatternException | ReadRequestException | LoginException | UnexpectedRequestBodyException e) {
 			log.error(e.getMessage());
 			resp.setStatus(400);
 			return;

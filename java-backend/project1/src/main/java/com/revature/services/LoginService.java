@@ -24,6 +24,10 @@ public class LoginService {
 		
 		try {
 			User user = dao.getUserByUsername(username);
+			
+			if (user == null) {
+				return null;
+			}
 						
 			if (user.getUsername().equals(username) && user.getPassword().equals(password)) {
 				return user;
