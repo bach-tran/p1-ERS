@@ -17,26 +17,24 @@ public class LoginService {
 		super();
 	}
 	
-	public boolean login(String username, String password) {
+	public User login(String username, String password) {
 		UserDAO dao = new UserDAO(ConnectionUtility.getConnection());
 		
 		username = username.trim();
 		
 		try {
 			User user = dao.getUserByUsername(username);
-			
-			if (user == null ) return false;
-			
+						
 			if (user.getUsername().equals(username) && user.getPassword().equals(password)) {
-				return true;
+				return user;
 			}
 			
 		} catch (SQLException e) {
 			log.error("An issue with SQL occurred: " + e.getMessage());
-			return false;
+			return null;
 		}
 		
-		return false;
+		return null;
 	}
 	
 	// Implement password hashing

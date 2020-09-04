@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { User } from '../models/user';
+import { AuthenticationService } from '../auth-service/authentication.service';
 
 @Component({
   selector: 'app-login',
@@ -11,31 +13,27 @@ export class LoginComponent implements OnInit {
   username: string;
   password: string;
 
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor(private authService: AuthenticationService, private http: HttpClient, private router: Router) {
+  }
 
-  ngOnInit(): void {
-    // if (sessionStorage.getItem('username') !== null) {
-    //   this.router.navigate(['employee-home']);
-    // }
+  async ngOnInit(): Promise<void> {
+    if (await this.authService.checkAuthorization()) {
+      this.router.navigate(['employee-home']);
+    }
   }
 
   async onClick(): Promise<void> {
-    const loginData = {
-      username: this.username,
-      password: this.password
-    };
-
     try {
-      await this.http.post('http://localhost:8080/project1/login', loginData, {
-        withCredentials: true
-      }).toPromise();
+      const user: User = await this.authService.login(this.username, this.password);
 
-      sessionStorage.setItem('username', loginData.username);
+      if (user.role === 'EMPLOYEE') {
+        this.router.navigate(['employee-home']);
+      } else {
+        console.log('You are not of the EMPLOYEE type');
+      }
 
-      this.router.navigate(['employee-home']);
     } catch (error) {
-      console.log(error);
-      alert('Error logging in!');
+      alert('Error logging in');
     }
 
   }

@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="org.postgresql.Driver"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="javax.servlet.Filter"/>
-<fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="com.revature.exceptions.InvalidMethodException"/>
 <fullyQualifiedTypeName name="com.revature.utilities.RequestUtility"/>
 <fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
@@ -31,4 +30,5 @@
 <fullyQualifiedTypeName name="com.revature.utilities.ConnectionUtility"/>
 <fullyQualifiedTypeName name="com.revature.dao.UserDAO"/>
 <fullyQualifiedTypeName name="com.revature.models.User"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
 </qualifiedTypeNameHistroy>

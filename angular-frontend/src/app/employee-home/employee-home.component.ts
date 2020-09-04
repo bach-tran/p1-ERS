@@ -1,4 +1,7 @@
+import { Router } from '@angular/router';
+import { AuthenticationService } from '../auth-service/authentication.service';
 import { Component, OnInit } from '@angular/core';
+import { User } from '../models/user';
 
 @Component({
   selector: 'app-employee-home',
@@ -7,13 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeeHomeComponent implements OnInit {
 
-  public username: string;
+  public fullName: string;
 
-  constructor() {
-    this.username = sessionStorage.getItem('username');
-  }
+  constructor(private authService: AuthenticationService, private router: Router) {}
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
+    if (!(await this.authService.checkAuthorization())) {
+      this.router.navigate(['login']);
+    }
+
+    console.log(this.authService.getUser());
+    this.fullName = this.authService.getUser().firstName + ' ' + this.authService.getUser().lastName;
   }
 
 }

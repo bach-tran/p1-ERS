@@ -1,3 +1,4 @@
+import { AuthenticationService } from './auth-service/authentication.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -32,7 +33,7 @@ import { EmpHomeNavComponent } from './nav/emp-home-nav/emp-home-nav.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

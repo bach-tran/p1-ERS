@@ -1,19 +1,19 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
   <div class="container">
-    <a href="/" class="navbar-brand">ERS</a>
+    <a [routerLink]="['']" class="navbar-brand">ERS</a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a routerLink="/employee-home" class="nav-link">Home</a>
+          <a [routerLink]="['']" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-          <a href="/login" class="nav-link">Login</a>
+          <a [routerLink]="['/login']" class="nav-link">Login</a>
         </li>
         <li class="nav-ite">
-          <a href="/register" class="nav-link">Register</a>
+          <a [routerLink]="['/register']" class="nav-link">Register</a>
         </li>
       </ul>
     </div>
