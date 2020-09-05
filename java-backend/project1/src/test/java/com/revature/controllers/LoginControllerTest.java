@@ -1,15 +1,12 @@
 package com.revature.controllers;
 
-import static org.junit.Assert.assertEquals;
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.eq;
-import static org.mockito.Mockito.RETURNS_DEEP_STUBS;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Arrays;
@@ -23,17 +20,13 @@ import javax.servlet.http.HttpSession;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mockito;
-import org.powermock.api.mockito.PowerMockito;
-import org.powermock.core.classloader.annotations.PrepareForTest;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.revature.exceptions.InvalidMethodException;
 import com.revature.exceptions.InvalidURIPatternException;
 import com.revature.exceptions.LoginException;
 import com.revature.exceptions.ReadRequestException;
+import com.revature.exceptions.UnexpectedRequestBodyException;
+import com.revature.models.Role;
 import com.revature.models.User;
 import com.revature.services.LoginService;
 
@@ -95,7 +88,7 @@ public class LoginControllerTest {
 		
 		when(req.getMethod()).thenReturn("POST");
 		when(req.getSession(eq(false))).thenReturn(session);
-		when(session.getAttribute(eq("currentUser"))).thenReturn(new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", "EMPLOYEE"));
+		when(session.getAttribute(eq("currentUser"))).thenReturn(new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", new Role(1, "EMPLOYEE")));
 		
 		controller.process(req, resp, portions);
 	}
@@ -111,7 +104,7 @@ public class LoginControllerTest {
 		when(req.getSession(eq(false))).thenReturn(session);
 		when(session.getAttribute(eq("currentUser"))).thenReturn(null);
 		
-		when(loginService.login(any(), any())).thenReturn(new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", "EMPLOYEE"));
+		when(loginService.login(any(), any())).thenReturn(new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", new Role(1, "EMPLOYEE")));
 		when(req.getSession()).thenReturn(session);
 		
 		PrintWriter writer = mock(PrintWriter.class);
@@ -154,7 +147,7 @@ public class LoginControllerTest {
 		map.put("password", "12345");
 		
 		when(loginService.parseLoginBody(any())).thenReturn(map);
-		when(loginService.login(map.get("username"), map.get("password"))).thenReturn(new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", "EMPLOYEE"));
+		when(loginService.login(map.get("username"), map.get("password"))).thenReturn(new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", new Role(1, "EMPLOYEE")));
 		when(req.getSession()).thenReturn(session);
 		
 		PrintWriter writer = mock(PrintWriter.class);
@@ -247,7 +240,7 @@ public class LoginControllerTest {
 		
 		when(req.getSession(eq(false))).thenReturn(session);
 		when(req.getMethod()).thenReturn("GET");
-		when(session.getAttribute(eq("currentUser"))).thenReturn(new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", "EMPLOYEE"));
+		when(session.getAttribute(eq("currentUser"))).thenReturn(new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", new Role(1, "EMPLOYEE")));
 		when(resp.getWriter()).thenReturn(writer);
 		
 		controller.process(req, resp, portions);

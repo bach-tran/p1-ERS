@@ -1,5 +1,6 @@
 package com.revature.exceptions;
 
+@SuppressWarnings("serial")
 public class InvalidMethodException extends Exception {
 
 	public InvalidMethodException() {

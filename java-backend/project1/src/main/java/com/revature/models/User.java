@@ -8,14 +8,14 @@ public class User {
 	private String firstName;
 	private String lastName;
 	private String email;
-	private String role;
+	private Role role;
 	
 	public User() {
 		super();
 	}
 
 	public User(int id, String username, String password, String firstName, String lastName, String email,
-			String role) {
+			Role role) {
 		super();
 		this.id = id;
 		this.username = username;
@@ -74,11 +74,11 @@ public class User {
 		this.email = email;
 	}
 
-	public String getRole() {
+	public Role getRole() {
 		return role;
 	}
 
-	public void setRole(String role) {
+	public void setRole(Role role) {
 		this.role = role;
 	}
 
@@ -145,4 +145,5 @@ public class User {
 		return "User [id=" + id + ", username=" + username + ", password=" + password + ", firstName=" + firstName
 				+ ", lastName=" + lastName + ", email=" + email + ", role=" + role + "]";
 	}
+	
 }

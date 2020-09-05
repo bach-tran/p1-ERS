@@ -2,8 +2,6 @@ package com.revature.services;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Matchers.any;
-import static org.mockito.Matchers.anyObject;
-import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.RETURNS_DEEP_STUBS;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -16,13 +14,12 @@ import java.util.Map;
 
 import org.junit.Test;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.revature.controllers.UnexpectedRequestBodyException;
 import com.revature.dao.UserDAO;
+import com.revature.exceptions.UnexpectedRequestBodyException;
+import com.revature.models.Role;
 import com.revature.models.User;
 
 public class LoginServiceTest {
@@ -57,11 +54,6 @@ public class LoginServiceTest {
 		LoginService loginService = new LoginService();
 		
 		BufferedReader reader = mock(BufferedReader.class, RETURNS_DEEP_STUBS);
-		
-		ObjectMapper om = mock(ObjectMapper.class);
-		ObjectNode nodeMock = mock(ObjectNode.class);
-		JsonNode usernameNode = mock(JsonNode.class);
-		JsonNode passwordNode = mock(JsonNode.class);
 
 		when(reader.lines().collect(any())).thenReturn("{\"username\":\"test\"}");
 		
@@ -84,7 +76,7 @@ public class LoginServiceTest {
 		UserDAO dao = mock(UserDAO.class);
 		LoginService loginService = new LoginService(dao);
 		
-		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", "EMPLOYEE");
+		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", new Role(1, "EMPLOYEE"));
 		when(dao.getUserByUsername("bach_tran")).thenReturn(expectedUser);
 		
 		assertEquals(expectedUser, loginService.login("bach_tran", "12345"));
@@ -95,7 +87,7 @@ public class LoginServiceTest {
 		UserDAO dao = mock(UserDAO.class);
 		LoginService loginService = new LoginService(dao);
 		
-		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", "EMPLOYEE");
+		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", new Role(1, "EMPLOYEE"));
 		when(dao.getUserByUsername("bach_tran")).thenReturn(expectedUser);
 		
 		assertEquals(expectedUser, loginService.login("    bach_tran", "12345"));
@@ -106,7 +98,7 @@ public class LoginServiceTest {
 		UserDAO dao = mock(UserDAO.class);
 		LoginService loginService = new LoginService(dao);
 		
-		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", "EMPLOYEE");
+		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", new Role(1, "EMPLOYEE"));
 		when(dao.getUserByUsername("bach_tran")).thenReturn(expectedUser);
 		
 		assertEquals(expectedUser, loginService.login("bach_tran    ", "12345"));
@@ -117,7 +109,7 @@ public class LoginServiceTest {
 		UserDAO dao = mock(UserDAO.class);
 		LoginService loginService = new LoginService(dao);
 		
-		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", "EMPLOYEE");
+		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", new Role(1, "EMPLOYEE"));
 		when(dao.getUserByUsername("bach_tran")).thenReturn(expectedUser);
 		
 		assertEquals(expectedUser, loginService.login("   bach_tran    ", "12345"));
@@ -128,7 +120,7 @@ public class LoginServiceTest {
 		UserDAO dao = mock(UserDAO.class);
 		LoginService loginService = new LoginService(dao);
 		
-		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", "EMPLOYEE");
+		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", new Role(1, "EMPLOYEE"));
 		when(dao.getUserByUsername("bach_tran")).thenReturn(expectedUser);
 		
 		assertEquals(null, loginService.login("bach_tran", "   12345"));
@@ -139,7 +131,7 @@ public class LoginServiceTest {
 		UserDAO dao = mock(UserDAO.class);
 		LoginService loginService = new LoginService(dao);
 		
-		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", "EMPLOYEE");
+		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", new Role(1, "EMPLOYEE"));
 		when(dao.getUserByUsername("bach_tran")).thenReturn(expectedUser);
 		
 		assertEquals(null, loginService.login("bach_tran", "12345   "));
@@ -150,7 +142,7 @@ public class LoginServiceTest {
 		UserDAO dao = mock(UserDAO.class);
 		LoginService loginService = new LoginService(dao);
 		
-		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", "EMPLOYEE");
+		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", new Role(1, "EMPLOYEE"));
 		when(dao.getUserByUsername("bach_tran")).thenReturn(expectedUser);
 		
 		assertEquals(null, loginService.login("bach_tran", "    12345   "));
@@ -161,7 +153,7 @@ public class LoginServiceTest {
 		UserDAO dao = mock(UserDAO.class);
 		LoginService loginService = new LoginService(dao);
 		
-		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", "EMPLOYEE");
+		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", new Role(1, "EMPLOYEE"));
 		when(dao.getUserByUsername("bach_tran")).thenReturn(expectedUser);
 		
 		assertEquals(null, loginService.login("bach_tran", "incorrectPass"));
@@ -172,7 +164,7 @@ public class LoginServiceTest {
 		UserDAO dao = mock(UserDAO.class);
 		LoginService loginService = new LoginService(dao);
 		
-		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", "EMPLOYEE");
+		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", new Role(1, "EMPLOYEE"));
 		when(dao.getUserByUsername("bach_tran")).thenReturn(expectedUser);
 		
 		assertEquals(null, loginService.login("incorrectUser", "12345"));
@@ -183,7 +175,7 @@ public class LoginServiceTest {
 		UserDAO dao = mock(UserDAO.class);
 		LoginService loginService = new LoginService(dao);
 		
-		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", "EMPLOYEE");
+		User expectedUser = new User(1, "bach_tran", "12345", "Bach", "Tran", "bach_tran@outlook.com", new Role(1, "EMPLOYEE"));
 		when(dao.getUserByUsername("bach_tran")).thenReturn(expectedUser);
 		
 		assertEquals(null, loginService.login("incorrectUser", "incorrectPassword"));

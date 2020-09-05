@@ -1,5 +1,6 @@
 package com.revature.exceptions;
 
+@SuppressWarnings("serial")
 public class ReadRequestException extends Exception {
 
 	public ReadRequestException() {

@@ -7,18 +7,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.apache.log4j.Logger;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.revature.controllers.LoginController;
-import com.revature.controllers.UnexpectedRequestBodyException;
 import com.revature.dao.UserDAO;
+import com.revature.exceptions.UnexpectedRequestBodyException;
 import com.revature.models.User;
 import com.revature.utilities.ConnectionUtility;
 

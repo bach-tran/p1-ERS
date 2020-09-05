@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import com.revature.models.Role;
 import com.revature.models.User;
 
 public class UserDAO {
@@ -25,11 +26,11 @@ public class UserDAO {
 	}
 	
 	public User getUserByUsername(String user) throws SQLException {
-		String sql = "SELECT u.id, u.username, u.password, u.first_name, u.last_name, u.email, ur.role " +
-				"FROM users u " +
-				"INNER JOIN user_roles ur " +
-				"ON u.role_id = ur.id " +
-				"WHERE username = ?";
+		String sql = "SELECT u.id, u.username, u.password, u.first_name, u.last_name, u.email, ur.id, ur.role " +
+				"FROM users u "
+				+ "INNER JOIN user_roles ur "
+				+ "ON u.role_id = ur.id "
+				+ "WHERE u.username = ?";
 		
 		PreparedStatement stmt = con.prepareStatement(sql);
 		
@@ -43,9 +44,10 @@ public class UserDAO {
 			String firstName = rs.getString(4);
 			String lastName = rs.getString(5);
 			String email = rs.getString(6);
-			String role = rs.getString(7);
+			int roleId = rs.getInt(7);
+			String role = rs.getString(8);
 			
-			User newUser = new User(id, username, password, firstName, lastName, email, role);
+			User newUser = new User(id, username, password, firstName, lastName, email, new Role(roleId, role));
 			
 			return newUser;
 		}
@@ -54,7 +56,7 @@ public class UserDAO {
 	}
 	
 	public User getUserById(int id) throws SQLException {
-		String sql = "SELECT u.id, u.username, u.password, u.first_name, u.last_name, u.email, ur.role " +
+		String sql = "SELECT u.id, u.username, u.password, u.first_name, u.last_name, u.email, ur.id, ur.role " +
 				"FROM users u " +
 				"INNER JOIN user_roles ur " +
 				"ON u.role_id = ur.id " +
@@ -72,9 +74,10 @@ public class UserDAO {
 			String firstName = rs.getString(4);
 			String lastName = rs.getString(5);
 			String email = rs.getString(6);
-			String role = rs.getString(7);
+			int roleId = rs.getInt(7);
+			String role = rs.getString(8);
 			
-			User newUser = new User(user_id, username, password, firstName, lastName, email, role);
+			User newUser = new User(user_id, username, password, firstName, lastName, email, new Role(roleId, role));
 			
 			return newUser;
 		}

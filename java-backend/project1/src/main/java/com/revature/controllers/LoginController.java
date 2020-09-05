@@ -1,14 +1,9 @@
 package com.revature.controllers;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -16,18 +11,14 @@ import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Logger;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.revature.exceptions.InvalidMethodException;
 import com.revature.exceptions.InvalidURIPatternException;
 import com.revature.exceptions.LoginException;
 import com.revature.exceptions.ReadRequestException;
+import com.revature.exceptions.UnexpectedRequestBodyException;
 import com.revature.models.User;
 import com.revature.services.LoginService;
-import com.revature.utilities.ConnectionUtility;
-import com.revature.utilities.RequestUtility;
 
 public class LoginController {
 	

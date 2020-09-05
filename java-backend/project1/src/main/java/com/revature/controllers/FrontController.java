@@ -15,7 +15,9 @@ import com.revature.exceptions.InvalidMethodException;
 import com.revature.exceptions.InvalidURIPatternException;
 import com.revature.exceptions.LoginException;
 import com.revature.exceptions.ReadRequestException;
+import com.revature.exceptions.UnexpectedRequestBodyException;
 
+@SuppressWarnings("serial")
 public class FrontController extends HttpServlet {
 	
 	private LoginController loginController;

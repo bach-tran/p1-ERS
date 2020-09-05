@@ -1,4 +1,4 @@
-package com.revature.controllers;
+package com.revature.exceptions;
 
 public class UnexpectedRequestBodyException extends Exception {
 

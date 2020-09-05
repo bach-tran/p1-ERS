@@ -24,7 +24,7 @@ export class AuthenticationService {
   }
 
   public async logout(): Promise<void> {
-    const response: Promise<void> = this.http.post<void>('http://localhost:8080/project1/logout', {},
+    const response: Promise<void> = this.http.get<void>('http://localhost:8080/project1/logout',
     {
       withCredentials: true
     }).toPromise();
@@ -34,7 +34,7 @@ export class AuthenticationService {
 
   public async checkAuthorization(): Promise<boolean> {
     try {
-      const response = await this.http.post<User>('http://localhost:8080/project1/login/check', {}, {
+      const response = await this.http.get<User>('http://localhost:8080/project1/login/check', {
         withCredentials: true
       }).toPromise();
       this.setUser(response);
