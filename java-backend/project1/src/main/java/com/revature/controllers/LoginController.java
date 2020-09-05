@@ -44,49 +44,60 @@ public class LoginController {
 		this.loginService = service;
 	}
 
-	public void process(HttpServletRequest req, HttpServletResponse resp, List<String> portions) throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException {
+	public void process(HttpServletRequest req, HttpServletResponse resp, List<String> portions) throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, IOException {
 		log.info("Processing request");
-		session = req.getSession(false);
+		// /login
 		if (portions.size() == 0) {
 			String method = req.getMethod();
 			
 			if (!method.equals("POST")) {
-				throw new InvalidMethodException("LoginController only accepts POST requests. Another request type was received.");
+				throw new InvalidMethodException("/login/ only accepts POST requests. Another request type was received.");
 			}
 			
-			try {
-				if (session == null) {
-					Map<String, String> map;
-					map = parsePostBody(req);
+			session = req.getSession(false);
+
+			if (session == null || session.getAttribute("currentUser") == null) {
+				log.info("Session or currentUser is null, attempting to log in...");
+				Map<String, String> map;
+				map = loginService.parseLoginBody(req.getReader());
+				
+				log.info("POST request body parsed");
+				log.info("username provided: " + map.get("username"));
+				//log.info("password provided: " + map.get("password"));
+				log.info("Invoking LoginService");
+				
+				User user = loginService.login(map.get("username"), map.get("password"));
+				if (user != null) {
+					log.info("Creating new session");
+					session = req.getSession();
+					PrintWriter writer = resp.getWriter();
 					
-					log.info("POST request body parsed");
-					log.info("username provided: " + map.get("username"));
-					log.info("password provided: " + map.get("password"));
-					log.info("Invoking LoginService");
+					session.setAttribute("currentUser", user);
+					writer.write(new ObjectMapper().writeValueAsString(user));
+					resp.setStatus(200);
 					
-					User user = loginService.login(map.get("username"), map.get("password"));
-					if (user != null) {
-						session = req.getSession();
-						PrintWriter writer = resp.getWriter();
-						log.info(map.get("username") + " successfully logged in");
-						
-						session.setAttribute("currentUser", user);
-						writer.write(new ObjectMapper().writeValueAsString(user));
-						resp.setStatus(200);
-					} else {
-						throw new LoginException("Unable to retrieve user. Username or password may be incorrect.");
-					}
-					
+					log.info(map.get("username") + " successfully logged in");
 				} else {
-					log.info("A request to login was received, but a session already exists.");
+					throw new LoginException("Unable to retrieve user. Username or password may be incorrect.");
 				}
 				
-			} catch (IOException e) {
-				e.printStackTrace();
+			} else {
+				log.info("A request to login was received, but a session already exists.");
+				throw new LoginException("Session already exists");
 			}
-			
+				
+		// Additional path
 		} else if (portions.size() == 1) {
+			String method = req.getMethod();
+			
+			// login/check
 			if (portions.get(0).equals("check")) {
+				session = req.getSession(false);
+				
+				if (!method.equals("GET")) {
+					throw new InvalidMethodException("/login/check/ only accepts GET requests. Another request type was received.");
+				}
+				
 				if (session == null || session.getAttribute("currentUser") == null) {
 					throw new LoginException("User is not authorized and will need to login");
 				}
@@ -97,7 +108,7 @@ public class LoginController {
 			
 					writer.write(new ObjectMapper().writeValueAsString(session.getAttribute("currentUser")));
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
+					
 					e.printStackTrace();
 				}
 				
@@ -105,34 +116,10 @@ public class LoginController {
 			} else {
 				throw new InvalidURIPatternException("Invalid URI pattern sent to LoginController");
 			}
+			
 		} else {
 			throw new InvalidURIPatternException("Invalid URI pattern sent to LoginController");
 		}
-	}
-	
-	public Map<String, String> parsePostBody(HttpServletRequest req) throws IOException, UnexpectedRequestBodyException {
-		BufferedReader reader = req.getReader();
-		
-		String body = reader.lines().collect(Collectors.joining());
-		
-		ObjectMapper om = new ObjectMapper();
-		ObjectNode node = om.readValue(body, ObjectNode.class);
-		
-		if (node.get("username") == null || node.get("password") == null) {
-			throw new UnexpectedRequestBodyException("Unexpected body of login request was provided");
-		}
-		
-		JsonNode usernameNode = node.get("username");
-		JsonNode passwordNode = node.get("password");
-		
-		String username = usernameNode.asText();
-		String password = passwordNode.asText();
-		
-		Map<String, String> map = new HashMap<>();
-		map.put("username", username);
-		map.put("password", password);
-		
-		return map;
 	}
 	
 }

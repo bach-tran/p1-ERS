@@ -13,8 +13,6 @@
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="org.junit.Before"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="com.revature.exceptions.InvalidURIPatternException"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
@@ -29,6 +27,8 @@
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="com.revature.utilities.ConnectionUtility"/>
 <fullyQualifiedTypeName name="com.revature.dao.UserDAO"/>
-<fullyQualifiedTypeName name="com.revature.models.User"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.revature.exceptions.InvalidURIPatternException"/>
+<fullyQualifiedTypeName name="com.revature.models.User"/>
 </qualifiedTypeNameHistroy>
