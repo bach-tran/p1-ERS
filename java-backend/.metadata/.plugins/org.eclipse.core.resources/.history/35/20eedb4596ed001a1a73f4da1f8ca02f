@@ -1,9 +1,0 @@
-package com.revature.dao;
-
-public class UserDAO {
-
-	public UserDAO() {
-		super();
-	}
-
-}
