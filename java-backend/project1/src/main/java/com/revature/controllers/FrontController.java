@@ -2,6 +2,7 @@ package com.revature.controllers;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -77,13 +78,16 @@ public class FrontController extends HttpServlet {
 				resp.setStatus(400);
 				return;
 			}
-		} catch (NoSuchAlgorithmException | InvalidMethodException | InvalidURIPatternException | ReadRequestException | LoginException | UnexpectedRequestBodyException e) {
+		} catch (InvalidMethodException | InvalidURIPatternException | UnexpectedRequestBodyException e) {
 			log.error(e.getMessage());
 			resp.setStatus(400);
 			return;
-		} catch (NotAuthorizedException e) {
+		} catch (LoginException | NotAuthorizedException e) {
 			log.error(e.getMessage());
 			resp.setStatus(401);
+		} catch (ReadRequestException | NoSuchAlgorithmException | SQLException e) {
+			log.error(e.getMessage());
+			resp.setStatus(500);
 		}
 	}
 

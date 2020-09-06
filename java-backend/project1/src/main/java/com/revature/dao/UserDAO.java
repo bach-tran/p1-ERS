@@ -11,11 +11,7 @@ import com.revature.models.User;
 public class UserDAO {
 
 	private Connection con;
-	
-	public UserDAO() {
-		super();
-	}
-	
+		
 	public UserDAO(Connection con) {
 		super();
 		this.con = con;
