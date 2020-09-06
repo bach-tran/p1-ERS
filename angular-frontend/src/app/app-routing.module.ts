@@ -1,3 +1,4 @@
+import { ManagerHomeComponent } from './manager-home/manager-home.component';
 import { LogoutComponent } from './logout/logout.component';
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'logout', component: LogoutComponent},
   {path: 'employee-home', component: EmployeeHomeComponent},
+  {path: 'manager-home', component: ManagerHomeComponent},
   {path: '**', component: NotFoundComponent, pathMatch: 'full'}
 ];
 

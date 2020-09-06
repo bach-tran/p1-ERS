@@ -19,7 +19,10 @@ export class LoginComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     if (await this.authService.checkAuthorization()) {
-      this.router.navigate(['employee-home']);
+      const user: User = this.authService.getUser();
+
+      await this.navigateRole(user);
+
     }
   }
 
@@ -27,16 +30,23 @@ export class LoginComponent implements OnInit {
     try {
       const user: User = await this.authService.login(this.username, this.password);
 
-      if (user.role.role === 'EMPLOYEE') {
-        this.router.navigate(['employee-home']);
-      } else {
-        console.log('You are not of the EMPLOYEE type');
-      }
+      await this.navigateRole(user);
 
     } catch (error) {
       alert('Error logging in');
     }
 
+  }
+
+  private async navigateRole(user: User): Promise<void> {
+    if (user.role.role === 'EMPLOYEE') {
+      this.router.navigate(['employee-home']);
+    } else if (user.role.role === 'MANAGER') {
+      this.router.navigate(['manager-home']);
+    } else {
+      alert('Unknown User Role, cancelling session');
+      await this.authService.logout();
+    }
   }
 
 }

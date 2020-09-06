@@ -2,6 +2,8 @@ package com.revature.controllers;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.List;
 import java.util.Map;
 
@@ -36,7 +38,7 @@ public class LoginController {
 		this.loginService = service;
 	}
 
-	public void process(HttpServletRequest req, HttpServletResponse resp, List<String> portions) throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, IOException, NotAuthorizedException {
+	public void process(HttpServletRequest req, HttpServletResponse resp, List<String> portions) throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, IOException, NotAuthorizedException, NoSuchAlgorithmException {
 		log.info("Processing request");
 		// /login
 		if (portions.size() == 0) {
@@ -58,7 +60,7 @@ public class LoginController {
 				//log.info("password provided: " + map.get("password"));
 				log.info("Invoking LoginService");
 				
-				User user = loginService.login(map.get("username"), map.get("password"));
+				User user = loginService.login(map.get("username"), loginService.hashPassword(map.get("password"), MessageDigest.getInstance("SHA-256")));
 				if (user != null) {
 					log.info("Creating new session");
 					session = req.getSession();

@@ -15,6 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmployeeHomeComponent } from './employee-home/employee-home.component';
 import { EmpHomeNavComponent } from './nav/emp-home-nav/emp-home-nav.component';
 import { LogoutComponent } from './logout/logout.component';
+import { ManagerHomeComponent } from './manager-home/manager-home.component';
+import { ManagerHomeNavComponent } from './nav/manager-home-nav/manager-home-nav.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { LogoutComponent } from './logout/logout.component';
     LoginNavComponent,
     EmployeeHomeComponent,
     EmpHomeNavComponent,
-    LogoutComponent
+    LogoutComponent,
+    ManagerHomeComponent,
+    ManagerHomeNavComponent
   ],
   imports: [
     BrowserModule,

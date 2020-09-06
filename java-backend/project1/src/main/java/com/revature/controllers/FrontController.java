@@ -1,6 +1,7 @@
 package com.revature.controllers;
 
 import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,6 +32,7 @@ public class FrontController extends HttpServlet {
 		super();
 		loginController = new LoginController();
 		logoutController = new LogoutController();
+		reimbursementController = new ReimbursementController();
 	}
 
 	@Override
@@ -75,7 +77,7 @@ public class FrontController extends HttpServlet {
 				resp.setStatus(400);
 				return;
 			}
-		} catch (InvalidMethodException | InvalidURIPatternException | ReadRequestException | LoginException | UnexpectedRequestBodyException e) {
+		} catch (NoSuchAlgorithmException | InvalidMethodException | InvalidURIPatternException | ReadRequestException | LoginException | UnexpectedRequestBodyException e) {
 			log.error(e.getMessage());
 			resp.setStatus(400);
 			return;

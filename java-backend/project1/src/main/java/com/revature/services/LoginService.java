@@ -2,17 +2,21 @@ package com.revature.services;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.security.MessageDigest;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import org.apache.commons.codec.binary.Hex;
 import org.apache.log4j.Logger;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.revature.dao.UserDAO;
+import com.revature.exceptions.LoginException;
 import com.revature.exceptions.UnexpectedRequestBodyException;
 import com.revature.models.User;
 import com.revature.utilities.ConnectionUtility;
@@ -78,6 +82,16 @@ public class LoginService {
 		map.put("password", password);
 		
 		return map;
+	}
+	
+	public String hashPassword(String password, MessageDigest digest) throws LoginException {
+		try {
+	        byte[] hashedBytes = digest.digest(password.getBytes("UTF-8"));
+	        
+	        return Hex.encodeHexString(hashedBytes);
+	    } catch (UnsupportedEncodingException ex) {
+	        throw new LoginException("Could not generate hash from String");
+	    }
 	}
 	
 }
