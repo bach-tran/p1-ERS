@@ -17,6 +17,7 @@ public class UserDAO {
 	}
 	
 	public UserDAO(Connection con) {
+		super();
 		this.con = con;
 	}
 	

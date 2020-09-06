@@ -15,6 +15,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.exceptions.InvalidMethodException;
 import com.revature.exceptions.InvalidURIPatternException;
 import com.revature.exceptions.LoginException;
+import com.revature.exceptions.NotAuthorizedException;
 import com.revature.exceptions.ReadRequestException;
 import com.revature.exceptions.UnexpectedRequestBodyException;
 import com.revature.models.User;
@@ -35,7 +36,7 @@ public class LoginController {
 		this.loginService = service;
 	}
 
-	public void process(HttpServletRequest req, HttpServletResponse resp, List<String> portions) throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, IOException {
+	public void process(HttpServletRequest req, HttpServletResponse resp, List<String> portions) throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, IOException, NotAuthorizedException {
 		log.info("Processing request");
 		// /login
 		if (portions.size() == 0) {
@@ -90,7 +91,7 @@ public class LoginController {
 				}
 				
 				if (session == null || session.getAttribute("currentUser") == null) {
-					throw new LoginException("User is not authorized and will need to login");
+					throw new NotAuthorizedException("User is not authorized and will need to login");
 				}
 				
 				PrintWriter writer;

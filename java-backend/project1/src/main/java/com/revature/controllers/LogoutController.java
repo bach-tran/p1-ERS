@@ -31,11 +31,15 @@ public class LogoutController {
 			}
 			
 			session = req.getSession(false);
-			if (session != null && session.getAttribute("currentUser") != null) {
-				User currentUser = (User) session.getAttribute("currentUser");
-				String username = currentUser.getUsername();
+			if (session != null) {
+				if (session.getAttribute("currentUser") != null) {
+					User currentUser = (User) session.getAttribute("currentUser");
+					String username = currentUser.getUsername();
+					log.info(username + " successfully logged out");
+				}
+				
 				session.invalidate();
-				log.info(username + " successfully logged out");
+				
 			} else {
 				log.info("A request to logout was made, but no session is active");
 			}

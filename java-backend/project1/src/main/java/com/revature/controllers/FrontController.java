@@ -14,15 +14,18 @@ import org.apache.log4j.Logger;
 import com.revature.exceptions.InvalidMethodException;
 import com.revature.exceptions.InvalidURIPatternException;
 import com.revature.exceptions.LoginException;
+import com.revature.exceptions.NotAuthorizedException;
 import com.revature.exceptions.ReadRequestException;
 import com.revature.exceptions.UnexpectedRequestBodyException;
 
 @SuppressWarnings("serial")
 public class FrontController extends HttpServlet {
 	
+	private Logger log = Logger.getLogger(FrontController.class);
+	
+	private ReimbursementController reimbursementController;
 	private LoginController loginController;
 	private LogoutController logoutController;
-	private Logger log = Logger.getLogger(FrontController.class);
 	
 	public FrontController() {
 		super();
@@ -64,6 +67,10 @@ public class FrontController extends HttpServlet {
 				log.info("LogoutController invoked");
 				logoutController.process(req, resp, portions);
 				break;
+			case "reimb":
+				log.info("ReimbursementController invoked");
+				reimbursementController.process(req, resp, portions);
+				break;
 			default:
 				resp.setStatus(400);
 				return;
@@ -72,6 +79,9 @@ public class FrontController extends HttpServlet {
 			log.error(e.getMessage());
 			resp.setStatus(400);
 			return;
+		} catch (NotAuthorizedException e) {
+			log.error(e.getMessage());
+			resp.setStatus(401);
 		}
 	}
 

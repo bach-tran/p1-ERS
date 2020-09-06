@@ -16,11 +16,10 @@ export class EmployeeHomeComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     if (!(await this.authService.checkAuthorization())) {
-      alert('You have been signed out.')
+      alert('You have been signed out.');
       this.router.navigate(['login']);
     }
 
-    console.log(this.authService.getUser());
     this.fullName = this.authService.getUser().firstName + ' ' + this.authService.getUser().lastName;
   }
 

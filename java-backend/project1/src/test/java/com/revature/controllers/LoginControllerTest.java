@@ -24,6 +24,7 @@ import org.junit.Test;
 import com.revature.exceptions.InvalidMethodException;
 import com.revature.exceptions.InvalidURIPatternException;
 import com.revature.exceptions.LoginException;
+import com.revature.exceptions.NotAuthorizedException;
 import com.revature.exceptions.ReadRequestException;
 import com.revature.exceptions.UnexpectedRequestBodyException;
 import com.revature.models.Role;
@@ -45,7 +46,7 @@ public class LoginControllerTest {
 	
 	
 	@Test
-	public void testZeroAdditionalPortions_getMethodRuns() throws LoginException, UnexpectedRequestBodyException, IOException {
+	public void testZeroAdditionalPortions_getMethodRuns() throws LoginException, UnexpectedRequestBodyException, IOException, NotAuthorizedException {
 		LoginController controller = new LoginController();
 		List<String> portions = Arrays.asList();
 		
@@ -60,7 +61,7 @@ public class LoginControllerTest {
 	
 	
 	@Test(expected=NullPointerException.class)
-	public void testZeroAdditionalPortions_validMethod() throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, IOException, LoginException, UnexpectedRequestBodyException {
+	public void testZeroAdditionalPortions_validMethod() throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, IOException, LoginException, UnexpectedRequestBodyException, NotAuthorizedException {
 		LoginController controller = new LoginController();
 		List<String> portions = Arrays.asList();
 		
@@ -72,7 +73,7 @@ public class LoginControllerTest {
 	}
 	
 	@Test(expected=InvalidMethodException.class)
-	public void testZeroAdditionalPortions_invalidMethod() throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, IOException {
+	public void testZeroAdditionalPortions_invalidMethod() throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, IOException, NotAuthorizedException {
 		LoginController controller = new LoginController();
 		List<String> portions = Arrays.asList();
 		
@@ -82,7 +83,7 @@ public class LoginControllerTest {
 	}
 	
 	@Test(expected=LoginException.class)
-	public void testZeroAdditionalPortions_nonNullSession_andNonNullCurrentUser() throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, IOException {
+	public void testZeroAdditionalPortions_nonNullSession_andNonNullCurrentUser() throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, IOException, NotAuthorizedException {
 		LoginController controller = new LoginController();
 		List<String> portions = Arrays.asList();
 		
@@ -94,7 +95,7 @@ public class LoginControllerTest {
 	}
 	
 	@Test
-	public void testZeroAdditonalPortions_nonNullSession_nullCurrentUser() throws IOException, UnexpectedRequestBodyException, InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException {
+	public void testZeroAdditonalPortions_nonNullSession_nullCurrentUser() throws IOException, UnexpectedRequestBodyException, InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, NotAuthorizedException {
 		LoginService loginService = mock(LoginService.class);
 		LoginController controller = new LoginController(loginService);
 		
@@ -114,7 +115,7 @@ public class LoginControllerTest {
 	}
 	
 	@Test(expected=LoginException.class)
-	public void testZeroAdditonalPortions_nonNullSession_nullCurrentUser_nullUserLogin() throws IOException, UnexpectedRequestBodyException, InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException {
+	public void testZeroAdditonalPortions_nonNullSession_nullCurrentUser_nullUserLogin() throws IOException, UnexpectedRequestBodyException, InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, NotAuthorizedException {
 		LoginService loginService = mock(LoginService.class);
 		LoginController controller = new LoginController(loginService);
 		
@@ -134,7 +135,7 @@ public class LoginControllerTest {
 	}
 	
 	@Test
-	public void testZeroAdditionalPortions_nullSession_nullCurrentUser() throws IOException, UnexpectedRequestBodyException, InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException {
+	public void testZeroAdditionalPortions_nullSession_nullCurrentUser() throws IOException, UnexpectedRequestBodyException, InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, NotAuthorizedException {
 		LoginService loginService = mock(LoginService.class);
 		LoginController controller = new LoginController(loginService);
 		List<String> portions = Arrays.asList();
@@ -157,7 +158,7 @@ public class LoginControllerTest {
 	}
 	
 	@Test(expected=LoginException.class)
-	public void testZeroAdditionalPortions_nullSession_nullCurrentUser_nullUserLogin() throws IOException, UnexpectedRequestBodyException, InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException {
+	public void testZeroAdditionalPortions_nullSession_nullCurrentUser_nullUserLogin() throws IOException, UnexpectedRequestBodyException, InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, NotAuthorizedException {
 		LoginService loginService = mock(LoginService.class);
 		LoginController controller = new LoginController(loginService);
 		List<String> portions = Arrays.asList();
@@ -181,7 +182,7 @@ public class LoginControllerTest {
 	
 	// One additional Portion tests /login/check
 	@Test(expected=InvalidURIPatternException.class)
-	public void testInvalidAdditionalURIPortion() throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, IOException {
+	public void testInvalidAdditionalURIPortion() throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, IOException, NotAuthorizedException {
 		LoginController controller = new LoginController();
 		
 		List<String> portions = Arrays.asList("randompath");
@@ -190,7 +191,7 @@ public class LoginControllerTest {
 	}
 	
 	@Test(expected=InvalidURIPatternException.class)
-	public void testAdditionalURIPortion_two() throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, IOException {
+	public void testAdditionalURIPortion_two() throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, IOException, NotAuthorizedException {
 		LoginController controller = new LoginController();
 		
 		List<String> portions = Arrays.asList("randompath", "anotherrandompath");
@@ -199,7 +200,7 @@ public class LoginControllerTest {
 	}
 	
 	@Test(expected=InvalidMethodException.class)
-	public void testAdditionalURIPortion_check_incorrectmethod() throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, IOException {
+	public void testAdditionalURIPortion_check_incorrectmethod() throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, IOException, NotAuthorizedException {
 		LoginController controller = new LoginController();
 		List<String> portions = Arrays.asList("check");
 		
@@ -209,7 +210,7 @@ public class LoginControllerTest {
 	}
 	
 	@Test(expected=LoginException.class)
-	public void testAdditionalURIPortion_check_nullSession() throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, IOException {
+	public void testAdditionalURIPortion_check_nullSession() throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, IOException, NotAuthorizedException {
 		LoginController controller = new LoginController();
 		List<String> portions = Arrays.asList("check");
 		
@@ -220,7 +221,7 @@ public class LoginControllerTest {
 	}
 	
 	@Test(expected=LoginException.class)
-	public void testAdditionalURIPortion_check_nullCurrentUser() throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, IOException {
+	public void testAdditionalURIPortion_check_nullCurrentUser() throws InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, IOException, NotAuthorizedException {
 		LoginController controller = new LoginController();
 		List<String> portions = Arrays.asList("check");
 		
@@ -232,7 +233,7 @@ public class LoginControllerTest {
 	}
 	
 	@Test
-	public void testAdditonalURIPortion_check_noException() throws IOException, InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException {
+	public void testAdditonalURIPortion_check_noException() throws IOException, InvalidMethodException, InvalidURIPatternException, ReadRequestException, LoginException, UnexpectedRequestBodyException, NotAuthorizedException {
 		PrintWriter writer = mock(PrintWriter.class);
 		
 		LoginController controller = new LoginController();

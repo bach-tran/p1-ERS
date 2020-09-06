@@ -1,3 +1,4 @@
+import { Role } from './../models/role';
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
@@ -26,7 +27,7 @@ export class LoginComponent implements OnInit {
     try {
       const user: User = await this.authService.login(this.username, this.password);
 
-      if (user.role === 'EMPLOYEE') {
+      if (user.role.role === 'EMPLOYEE') {
         this.router.navigate(['employee-home']);
       } else {
         console.log('You are not of the EMPLOYEE type');
