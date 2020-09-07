@@ -45,20 +45,30 @@ public class ReimbursementService {
 		return reimbursements;
 	}
 	
+	public List<Reimbursement> getAllReimbursementsByUserId(int id) throws SQLException {
+		List<Reimbursement> reimbursements = reimbDao.getAllReimbursementsByUserId(id);
+		
+		return reimbursements;
+	}
+	
 	public Reimbursement getReimbursementById(int id) throws SQLException {
 		Reimbursement reimbursement = reimbDao.getReimbursementById(id);
 		
 		return reimbursement;
 	}
 	
-	public boolean approveReimbursementById(int id) {
-		
+	public boolean approveReimbursementById(int id, int resolverId) throws SQLException {
+		if (reimbDao.approveReimbursementById(id, resolverId)) {
+			return true;
+		}
 		
 		return false;
 	}
 	
-	public boolean denyReimbursementById(int id) {
-		
+	public boolean denyReimbursementById(int id, int resolverId) throws SQLException {
+		if (reimbDao.denyReimbursementById(id, resolverId)) {
+			return true;
+		}
 		
 		return false;
 	}

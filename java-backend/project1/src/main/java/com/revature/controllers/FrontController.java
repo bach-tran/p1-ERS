@@ -17,10 +17,12 @@ import org.apache.log4j.Logger;
 import com.revature.exceptions.InvalidMethodException;
 import com.revature.exceptions.InvalidURIPatternException;
 import com.revature.exceptions.LoginException;
+import com.revature.exceptions.NotAllowedException;
 import com.revature.exceptions.NotAuthorizedException;
 import com.revature.exceptions.ReadRequestException;
 import com.revature.exceptions.ResourceNotAvailableException;
 import com.revature.exceptions.UnexpectedRequestBodyException;
+import com.revature.exceptions.UnexpectedRequestParametersException;
 
 @MultipartConfig
 @SuppressWarnings("serial")
@@ -81,7 +83,7 @@ public class FrontController extends HttpServlet {
 				resp.setStatus(400);
 				return;
 			}
-		} catch (InvalidMethodException | InvalidURIPatternException | UnexpectedRequestBodyException e) {
+		} catch (InvalidMethodException | InvalidURIPatternException | UnexpectedRequestBodyException | UnexpectedRequestParametersException e) {
 			log.error(e.getMessage());
 			resp.setStatus(400);
 			return;
@@ -91,15 +93,20 @@ public class FrontController extends HttpServlet {
 		} catch (ReadRequestException | NoSuchAlgorithmException | SQLException e) {
 			log.error(e.getMessage());
 			resp.setStatus(500);
-		} catch (ResourceNotAvailableException e) {
+		} catch (ResourceNotAvailableException | NotAllowedException e) {
 			log.error(e.getMessage());
 			resp.setStatus(404);
-		}
+		} 
 	}
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		doGet(req, resp);
+	}
+	
+	@Override
+	protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		doGet(req, resp);
 	}
 	
