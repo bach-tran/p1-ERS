@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -18,8 +19,10 @@ import com.revature.exceptions.InvalidURIPatternException;
 import com.revature.exceptions.LoginException;
 import com.revature.exceptions.NotAuthorizedException;
 import com.revature.exceptions.ReadRequestException;
+import com.revature.exceptions.ResourceNotAvailableException;
 import com.revature.exceptions.UnexpectedRequestBodyException;
 
+@MultipartConfig
 @SuppressWarnings("serial")
 public class FrontController extends HttpServlet {
 	
@@ -88,6 +91,9 @@ public class FrontController extends HttpServlet {
 		} catch (ReadRequestException | NoSuchAlgorithmException | SQLException e) {
 			log.error(e.getMessage());
 			resp.setStatus(500);
+		} catch (ResourceNotAvailableException e) {
+			log.error(e.getMessage());
+			resp.setStatus(404);
 		}
 	}
 

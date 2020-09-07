@@ -69,8 +69,6 @@ public class LoginService {
 			throw new UnexpectedRequestBodyException("Unexpected body of login request was provided");
 		}
 		
-		System.out.println(node.get("password"));
-		
 		JsonNode usernameNode = node.get("username");
 		JsonNode passwordNode = node.get("password");
 		
