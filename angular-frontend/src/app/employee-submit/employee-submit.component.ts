@@ -1,0 +1,53 @@
+import { AuthenticationService } from '../services/auth-service/authentication.service';
+import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-employee-submit',
+  templateUrl: './employee-submit.component.html',
+  styleUrls: ['./employee-submit.component.css']
+})
+export class EmployeeSubmitComponent implements OnInit {
+
+  selectedFile = null;
+  amount: number;
+  description: string;
+  type: number;
+
+  constructor(private http: HttpClient, private router: Router, private authService: AuthenticationService) { }
+
+  async ngOnInit(): Promise<void> {
+    if (!(await this.authService.checkAuthorization())) {
+      alert('You have been signed out.');
+      this.router.navigate(['login']);
+    }
+  }
+
+  onFileSelected(event): void {
+    this.selectedFile = event.target.files[0] as File;
+  }
+
+  async onUpload(): Promise<void> {
+    try {
+      const fd = new FormData();
+      fd.append('amount', this.amount.toString());
+      fd.append('description', this.description);
+      fd.append('type', this.type.toString());
+      fd.append('file', this.selectedFile, this.selectedFile.name);
+
+      await this.http.post(`http://localhost:8080/project1/reimb`, fd, {
+        withCredentials: true
+      }).toPromise();
+
+      this.router.navigate(['employee-home']);
+
+    } catch (error) {
+      console.log(error);
+      alert('Error when attempting to submit, please make sure values are correct');
+    }
+  }
+
+  selected(): void {
+  }
+}

@@ -1,0 +1,36 @@
+<app-nav navType='empSubmit'></app-nav>
+
+<div class="container" id="reimb-submit">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+
+      <form class="border border-dark bg-secondary text-light p-3">
+        <div class="div display-4">New Reimbursement</div>
+        <div class="form-group">
+          <label>Amount</label>
+          <input [(ngModel)]="amount" [ngModelOptions]="{standalone: true}" type="number" class="form-control" placeholder="enter a valid number">
+        </div>
+        <div class="form-group">
+          <label for="descriptiontextarea">Description</label>
+          <textarea [(ngModel)]="description" [ngModelOptions]="{standalone: true}" class="form-control" id="descriptiontextarea" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="typedropdown">Reimbursement Type</label>
+          <select [(ngModel)]="type" id="typedropdown" name="typeselect" class="custom-select custom-select mb-3" (change)="selected()" required>
+          <option value="1">Lodging</option>
+          <option value="2">Travel</option>
+          <option value="3">Food</option>
+          <option value="4">Other</option>
+        </select>
+        </div>
+        <div class="form-group">
+          <label for="receiptupload">Receipt Proof</label>
+          <input class="form-control-file" id="receiptupload" type="file" accept=".jpeg, .jpg, .png, .gif" (change)="onFileSelected($event)" required>
+        </div>
+        <button (click)="onUpload()" class="btn btn-primary btn-block">Submit</button>
+      </form>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>

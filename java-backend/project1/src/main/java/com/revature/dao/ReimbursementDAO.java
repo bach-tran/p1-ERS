@@ -5,7 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Timestamp;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +13,6 @@ import com.revature.models.Role;
 import com.revature.models.Status;
 import com.revature.models.Type;
 import com.revature.models.User;
-import com.revature.utilities.ConnectionUtility;
 
 public class ReimbursementDAO {
 

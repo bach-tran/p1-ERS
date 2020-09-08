@@ -6,7 +6,7 @@
       <div class="row text-left text-light d-sm-block text-center bg-dark py-3 rounded">
           <h1 class="display-3">Manage Your Reimbursements</h1>
           <p class="lead">Simple and Intuitive Reimbursement Management</p>
-          <a href="/login" class="btn btn-danger btn-lg">Log In Now</a>
+          <a [routerLink]="['/login']" class="btn btn-danger btn-lg">Log In Now</a>
       </div>
     </div>
   </div>
@@ -33,9 +33,9 @@
           </div>
           <div class="col-md-4 mb-4 text-center">
             <div class="card text-white bg-dark mb-3">
-              <div class="card-header"><h1 class="lead">Edit Pending Requests</h1></div>
+              <div class="card-header"><h1 class="lead">Approve or Deny Requests</h1></div>
               <div class="card-body">
-                <div class="card-text">Made a mistake? Edit your request within 1 hour of submission!</div>
+                <div class="card-text">Managers can easily approve or deny reimbursement requests</div>
               </div>
             </div>
           </div>

@@ -1,7 +1,6 @@
 import { Router } from '@angular/router';
-import { AuthenticationService } from '../auth-service/authentication.service';
+import { AuthenticationService } from '../services/auth-service/authentication.service';
 import { Component, OnInit } from '@angular/core';
-import { User } from '../models/user';
 
 @Component({
   selector: 'app-employee-home',
@@ -12,7 +11,7 @@ export class EmployeeHomeComponent implements OnInit {
 
   public fullName: string;
 
-  constructor(private authService: AuthenticationService, private router: Router) {}
+  constructor(private authService: AuthenticationService, private router: Router) { }
 
   async ngOnInit(): Promise<void> {
     if (!(await this.authService.checkAuthorization())) {
@@ -21,6 +20,7 @@ export class EmployeeHomeComponent implements OnInit {
     }
 
     this.fullName = this.authService.getUser().firstName + ' ' + this.authService.getUser().lastName;
+
   }
 
 }

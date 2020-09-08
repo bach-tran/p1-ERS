@@ -116,7 +116,7 @@ public class ReimbursementController {
 					String fileName = fileInfo[0];
 					String extension = fileInfo[1];
 					
-					if (!(extension.equals("jpg") || extension.equals("png") || extension.equals("gif"))) {
+					if (!(extension.equals("jpeg") || extension.equals("jpg") || extension.equals("png") || extension.equals("gif"))) {
 						throw new UnexpectedRequestBodyException("Only jpg, png, and gif files can be uploaded");
 					}
 					

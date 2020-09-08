@@ -1,4 +1,5 @@
-import { AuthenticationService } from './auth-service/authentication.service';
+import { ReimbursementService } from './services/reimbursement-service/reimbursement.service';
+import { AuthenticationService } from './services/auth-service/authentication.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -17,6 +18,10 @@ import { EmpHomeNavComponent } from './nav/emp-home-nav/emp-home-nav.component';
 import { LogoutComponent } from './logout/logout.component';
 import { ManagerHomeComponent } from './manager-home/manager-home.component';
 import { ManagerHomeNavComponent } from './nav/manager-home-nav/manager-home-nav.component';
+import { ReimbStatusPipe } from './pipes/reimb-status.pipe';
+import { ReimbursementTableComponent } from './reimbursement-table/reimbursement-table.component';
+import { EmployeeSubmitComponent } from './employee-submit/employee-submit.component';
+import { EmpSubmitNavComponent } from './nav/emp-submit-nav/emp-submit-nav.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +36,11 @@ import { ManagerHomeNavComponent } from './nav/manager-home-nav/manager-home-nav
     EmpHomeNavComponent,
     LogoutComponent,
     ManagerHomeComponent,
-    ManagerHomeNavComponent
+    ManagerHomeNavComponent,
+    ReimbStatusPipe,
+    ReimbursementTableComponent,
+    EmployeeSubmitComponent,
+    EmpSubmitNavComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +48,7 @@ import { ManagerHomeNavComponent } from './nav/manager-home-nav/manager-home-nav
     FormsModule,
     HttpClientModule
   ],
-  providers: [AuthenticationService],
+  providers: [AuthenticationService, ReimbursementService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
