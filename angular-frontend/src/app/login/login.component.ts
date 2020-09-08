@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
     if (await this.authService.checkAuthorization()) {
       const user: User = this.authService.getUser();
 
-      await this.navigateRole(user);
+      this.navigateRole(user);
 
     }
   }

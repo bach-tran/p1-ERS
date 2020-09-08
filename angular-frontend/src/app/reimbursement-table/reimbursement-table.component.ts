@@ -13,23 +13,27 @@ export class ReimbursementTableComponent implements OnInit {
 
   public statusType: string;
   public reimbursements: Reimbursement[];
+  public refreshing: boolean;
 
   constructor(private reimService: ReimbursementService, private authService: AuthenticationService, private router: Router) {
     this.statusType = 'all';
   }
 
   async ngOnInit(): Promise<void> {
+    this.reimbursements = this.reimService.empReimbDataCache;
     await this.getReimbursementsUser();
   }
 
   async getReimbursementsUser(): Promise<void> {
-    this.reimbursements = [];
+    this.refreshing = true;
     if (await this.authService.checkAuthorization()) {
       const id = this.authService.getUser().id;
 
       this.reimbursements = await this.reimService.getUserReimbursements(id);
+
+      this.refreshing = false;
     } else {
-      alert('Login session expired, returning to login form');
+      alert('Login session expired.');
       this.router.navigate(['/login']);
     }
   }

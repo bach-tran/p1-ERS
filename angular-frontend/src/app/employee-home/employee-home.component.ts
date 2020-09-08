@@ -15,7 +15,7 @@ export class EmployeeHomeComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     if (!(await this.authService.checkAuthorization())) {
-      alert('You have been signed out.');
+      alert('Login session expired.');
       this.router.navigate(['login']);
     }
 

@@ -22,6 +22,7 @@ import { ReimbStatusPipe } from './pipes/reimb-status.pipe';
 import { ReimbursementTableComponent } from './reimbursement-table/reimbursement-table.component';
 import { EmployeeSubmitComponent } from './employee-submit/employee-submit.component';
 import { EmpSubmitNavComponent } from './nav/emp-submit-nav/emp-submit-nav.component';
+import { ReimbursementTableManagerComponent } from './reimbursement-table-manager/reimbursement-table-manager.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { EmpSubmitNavComponent } from './nav/emp-submit-nav/emp-submit-nav.compo
     ReimbStatusPipe,
     ReimbursementTableComponent,
     EmployeeSubmitComponent,
-    EmpSubmitNavComponent
+    EmpSubmitNavComponent,
+    ReimbursementTableManagerComponent
   ],
   imports: [
     BrowserModule,

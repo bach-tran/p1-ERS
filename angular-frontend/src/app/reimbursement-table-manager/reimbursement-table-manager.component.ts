@@ -1,0 +1,66 @@
+import { AuthenticationService } from '../services/auth-service/authentication.service';
+import { Router } from '@angular/router';
+import { ReimbursementService } from 'src/app/services/reimbursement-service/reimbursement.service';
+import { Component, OnInit } from '@angular/core';
+import { Reimbursement } from '../models/reimbursement';
+
+@Component({
+  selector: 'app-reimbursement-table-manager',
+  templateUrl: './reimbursement-table-manager.component.html',
+  styleUrls: ['./reimbursement-table-manager.component.css']
+})
+export class ReimbursementTableManagerComponent implements OnInit {
+
+  refreshing: boolean;
+  reimbursements: Reimbursement[];
+  statusType: string = 'all';
+
+  constructor(private reimService: ReimbursementService, private router: Router, private authService: AuthenticationService) { }
+
+  ngOnInit(): void {
+    this.reimbursements = this.reimService.managerReimbDataCache;
+
+    this.getReimbursements();
+  }
+
+  async getReimbursements(): Promise<void> {
+    this.refreshing = true;
+    if (await this.authService.checkAuthorization()) {
+      this.reimbursements = await this.reimService.getReimbursements();
+
+      this.refreshing = false;
+    } else {
+      alert('Login session expired.');
+      this.router.navigate(['/login']);
+    }
+  }
+
+  async approveReimbursement(id: number): Promise<void> {
+    console.log('Approving ID ' + id);
+    if (await this.authService.checkAuthorization()) {
+      await this.reimService.approveReimbursement(id);
+
+      this.reimbursements = [];
+
+      location.reload();
+    } else {
+      alert('Login session expired.');
+      this.router.navigate(['/login']);
+    }
+  }
+
+  async denyReimbursement(id: number): Promise<void> {
+    console.log('Denying ID ' + id);
+    if (await this.authService.checkAuthorization()) {
+      await this.reimService.denyReimbursement(id);
+
+      this.reimbursements = [];
+
+      location.reload();
+    } else {
+      alert('Login session expired.');
+      this.router.navigate(['/login']);
+    }
+  }
+
+}

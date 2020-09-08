@@ -9,13 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManagerHomeComponent implements OnInit {
 
+  fullName: string;
+
   constructor(private authService: AuthenticationService, private router: Router) { }
 
   async ngOnInit(): Promise<void> {
     if (!(await this.authService.checkAuthorization())) {
-      alert('You have been signed out.');
+      alert('Login session expired.');
       this.router.navigate(['login']);
     }
+
+    this.fullName = this.authService.getUser().firstName + ' ' + this.authService.getUser().lastName;
   }
 
 }

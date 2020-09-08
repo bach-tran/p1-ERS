@@ -19,7 +19,7 @@ export class EmployeeSubmitComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     if (!(await this.authService.checkAuthorization())) {
-      alert('You have been signed out.');
+      alert('Login session expired.');
       this.router.navigate(['login']);
     }
   }
@@ -29,23 +29,32 @@ export class EmployeeSubmitComponent implements OnInit {
   }
 
   async onUpload(): Promise<void> {
-    try {
-      const fd = new FormData();
-      fd.append('amount', this.amount.toString());
-      fd.append('description', this.description);
-      fd.append('type', this.type.toString());
-      fd.append('file', this.selectedFile, this.selectedFile.name);
+    if (!(await this.authService.checkAuthorization())) {
 
-      await this.http.post(`http://localhost:8080/project1/reimb`, fd, {
-        withCredentials: true
-      }).toPromise();
+      alert('Login session expired.');
+      this.router.navigate(['login']);
 
-      this.router.navigate(['employee-home']);
+    } else {
 
-    } catch (error) {
-      console.log(error);
-      alert('Error when attempting to submit, please make sure values are correct');
+      try {
+        const fd = new FormData();
+        fd.append('amount', this.amount.toString());
+        fd.append('description', this.description);
+        fd.append('type', this.type.toString());
+        fd.append('file', this.selectedFile, this.selectedFile.name);
+
+        await this.http.post(`http://localhost:8080/project1/reimb`, fd, {
+          withCredentials: true
+        }).toPromise();
+
+        this.router.navigate(['employee-home']);
+
+      } catch (error) {
+        console.log(error);
+        alert('Error when attempting to submit, please make sure values are correct');
+      }
     }
+
   }
 
   selected(): void {
