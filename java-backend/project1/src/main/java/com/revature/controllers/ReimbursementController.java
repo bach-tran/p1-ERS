@@ -191,9 +191,11 @@ public class ReimbursementController {
 				if (operation.equals("approve")) {
 					this.reimbService.approveReimbursementById(id, resolverId);
 					log.info("Reimbursement id " + id + " approved by " + resolverName);
+					resp.setStatus(200);
 				} else if (operation.equals("deny")) {
 					this.reimbService.denyReimbursementById(id, resolverId);
 					log.info("Reimbursement id " + id + " denied by " + resolverName);
+					resp.setStatus(200);
 				} else {
 					throw new UnexpectedRequestParametersException("Value provided for operation parameter is invalid");
 				}

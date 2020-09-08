@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { ReimbursementService } from 'src/app/services/reimbursement-service/reimbursement.service';
 import { Component, OnInit } from '@angular/core';
 import { Reimbursement } from '../models/reimbursement';
+import { I18nSelectPipe } from '@angular/common';
 
 @Component({
   selector: 'app-reimbursement-table-manager',
@@ -18,7 +19,7 @@ export class ReimbursementTableManagerComponent implements OnInit {
   constructor(private reimService: ReimbursementService, private router: Router, private authService: AuthenticationService) { }
 
   ngOnInit(): void {
-    this.reimbursements = this.reimService.managerReimbDataCache;
+    // this.reimbursements = this.reimService.managerReimbDataCache;
 
     this.getReimbursements();
   }
@@ -40,9 +41,9 @@ export class ReimbursementTableManagerComponent implements OnInit {
     if (await this.authService.checkAuthorization()) {
       await this.reimService.approveReimbursement(id);
 
-      this.reimbursements = [];
+      this.sleep(1000);
 
-      location.reload();
+      this.getReimbursements();
     } else {
       alert('Login session expired.');
       this.router.navigate(['/login']);
@@ -54,13 +55,21 @@ export class ReimbursementTableManagerComponent implements OnInit {
     if (await this.authService.checkAuthorization()) {
       await this.reimService.denyReimbursement(id);
 
-      this.reimbursements = [];
+      this.sleep(1000);
 
-      location.reload();
+      this.getReimbursements();
     } else {
       alert('Login session expired.');
       this.router.navigate(['/login']);
     }
+  }
+
+  sleep(milliseconds) {
+    const date = Date.now();
+    let currentDate = null;
+    do {
+      currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
   }
 
 }

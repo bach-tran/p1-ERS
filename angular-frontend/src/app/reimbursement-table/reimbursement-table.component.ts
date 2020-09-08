@@ -20,7 +20,7 @@ export class ReimbursementTableComponent implements OnInit {
   }
 
   async ngOnInit(): Promise<void> {
-    this.reimbursements = this.reimService.empReimbDataCache;
+    // this.reimbursements = this.reimService.empReimbDataCache;
     await this.getReimbursementsUser();
   }
 

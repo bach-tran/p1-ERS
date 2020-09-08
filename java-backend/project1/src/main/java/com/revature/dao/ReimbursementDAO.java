@@ -32,7 +32,7 @@ public class ReimbursementDAO {
 	public List<Reimbursement> getAllReimbursements() throws SQLException {
 		String sql = "SELECT * " +
 				"FROM " +
-				"(SELECT r.id as reimb_id, r.*, status.*, type.*, author.*, author.role_id as au_role, resolver.*, resolver.role_id as re_role " +
+				"(SELECT r.id as reimb_id, r.id, r.amount, r.submitted, r.resolved, r.description, r.author, r.resolver, status.*, type.*, author.*, author.role_id as au_role, resolver.*, resolver.role_id as re_role " +
 				"FROM reimbursements r " +
 				"INNER JOIN r_status status " +
 				"ON r.status_id = status.id " +
@@ -60,55 +60,54 @@ public class ReimbursementDAO {
 			Timestamp reimbSubmitted = rs.getTimestamp(4);
 			Timestamp reimbResolved = rs.getTimestamp(5);
 			String reimbDescription = rs.getString(6);
-			// receipt is 7
-			//int reimbAuthorId = rs.getInt(8); 
-			int reimbResolverId = rs.getInt(9); // for logic, resolver can be null
+			//int reimbAuthorId = rs.getInt(7); 
+			int reimbResolverId = rs.getInt(8); // for logic, resolver can be null
 			// reimbStatusId 10
 			// reimbTypeId 11
-			int statusId = rs.getInt(12);
-			String status = rs.getString(13);
+			int statusId = rs.getInt(9);
+			String status = rs.getString(10);
 			Status statusObj = new Status(statusId, status);
 			
-			int typeId = rs.getInt(14);
-			String type = rs.getString(15);
+			int typeId = rs.getInt(11);
+			String type = rs.getString(12);
 			Type typeObj = new Type(typeId, type);
 			
 			// ROLES
-			int authorRoleId = rs.getInt(32);
-			String authorRole = rs.getString(33);
+			int authorRoleId = rs.getInt(29);
+			String authorRole = rs.getString(30);
 			Role authorRoleObj = new Role(authorRoleId, authorRole);
 			
-			int resolverRoleId = rs.getInt(34);
-			String resolverRole = rs.getString(35);
+			int resolverRoleId = rs.getInt(31);
+			String resolverRole = rs.getString(32);
 			Role resolverRoleObj = new Role(resolverRoleId, resolverRole);
 			
 			// Author
-			int authorId = rs.getInt(16);
-			String authorUsername = rs.getString(17);
-			String authorPassword = rs.getString(18);
-			String authorFirstname = rs.getString(19);
-			String authorLastname = rs.getString(20);
-			String authorEmail = rs.getString(21);
+			int authorId = rs.getInt(13);
+			String authorUsername = rs.getString(14);
+			String authorPassword = rs.getString(15);
+			String authorFirstname = rs.getString(16);
+			String authorLastname = rs.getString(17);
+			String authorEmail = rs.getString(18);
 			User author = new User(authorId, authorUsername, authorPassword, authorFirstname, authorLastname, authorEmail, authorRoleObj);
 			
-			// author role_id 22 <- same
-			// au_role 23 <- same
+			// author role_id 19 <- same
+			// au_role 20 <- same
 			
 			// Resolver
-			int resolverId = rs.getInt(24);
-			String resolverUsername = rs.getString(25);
-			String resolverPassword = rs.getString(26);
-			String resolverFirstname = rs.getString(27);
-			String resolverLastname = rs.getString(28);
-			String resolverEmail = rs.getString(29);
+			int resolverId = rs.getInt(21);
+			String resolverUsername = rs.getString(22);
+			String resolverPassword = rs.getString(23);
+			String resolverFirstname = rs.getString(24);
+			String resolverLastname = rs.getString(25);
+			String resolverEmail = rs.getString(26);
 			User resolver;
 			if (resolverId == 0) {
 				resolver = null;
 			} else {
 				resolver = new User(resolverId, resolverUsername, resolverPassword, resolverFirstname, resolverLastname, resolverEmail, resolverRoleObj);
 			}
-			// resolver role_id 30 <- same
-			// re_role 31 <- same
+			// resolver role_id 27 <- same
+			// re_role 28 <- same
 			
 			Reimbursement newReimb = new Reimbursement(reimbId, reimbAmount, reimbSubmitted, reimbResolved, reimbDescription, null, author, resolver, statusObj, typeObj);
 			reimbursements.add(newReimb);
@@ -120,7 +119,7 @@ public class ReimbursementDAO {
 	public List<Reimbursement> getAllReimbursementsByUserId(int id) throws SQLException {
 		String sql = "SELECT * " +
 				"FROM " +
-				"(SELECT r.id as reimb_id, r.*, status.*, type.*, author.*, author.role_id as au_role, resolver.*, resolver.role_id as re_role " +
+				"(SELECT r.id as reimb_id, r.id, r.amount, r.submitted, r.resolved, r.description, r.author, r.resolver, status.*, type.*, author.*, author.role_id as au_role, resolver.*, resolver.role_id as re_role " +
 				"FROM reimbursements r " +
 				"INNER JOIN r_status status " +
 				"ON r.status_id = status.id " +
@@ -151,55 +150,54 @@ public class ReimbursementDAO {
 			Timestamp reimbSubmitted = rs.getTimestamp(4);
 			Timestamp reimbResolved = rs.getTimestamp(5);
 			String reimbDescription = rs.getString(6);
-			// receipt is 7
-			//int reimbAuthorId = rs.getInt(8); 
-			int reimbResolverId = rs.getInt(9); // for logic, resolver can be null
+			//int reimbAuthorId = rs.getInt(7); 
+			int reimbResolverId = rs.getInt(8); // for logic, resolver can be null
 			// reimbStatusId 10
 			// reimbTypeId 11
-			int statusId = rs.getInt(12);
-			String status = rs.getString(13);
+			int statusId = rs.getInt(9);
+			String status = rs.getString(10);
 			Status statusObj = new Status(statusId, status);
 			
-			int typeId = rs.getInt(14);
-			String type = rs.getString(15);
+			int typeId = rs.getInt(11);
+			String type = rs.getString(12);
 			Type typeObj = new Type(typeId, type);
 			
 			// ROLES
-			int authorRoleId = rs.getInt(32);
-			String authorRole = rs.getString(33);
+			int authorRoleId = rs.getInt(29);
+			String authorRole = rs.getString(30);
 			Role authorRoleObj = new Role(authorRoleId, authorRole);
 			
-			int resolverRoleId = rs.getInt(34);
-			String resolverRole = rs.getString(35);
+			int resolverRoleId = rs.getInt(31);
+			String resolverRole = rs.getString(32);
 			Role resolverRoleObj = new Role(resolverRoleId, resolverRole);
 			
 			// Author
-			int authorId = rs.getInt(16);
-			String authorUsername = rs.getString(17);
-			String authorPassword = rs.getString(18);
-			String authorFirstname = rs.getString(19);
-			String authorLastname = rs.getString(20);
-			String authorEmail = rs.getString(21);
+			int authorId = rs.getInt(13);
+			String authorUsername = rs.getString(14);
+			String authorPassword = rs.getString(15);
+			String authorFirstname = rs.getString(16);
+			String authorLastname = rs.getString(17);
+			String authorEmail = rs.getString(18);
 			User author = new User(authorId, authorUsername, authorPassword, authorFirstname, authorLastname, authorEmail, authorRoleObj);
 			
-			// author role_id 22 <- same
-			// au_role 23 <- same
+			// author role_id 19 <- same
+			// au_role 20 <- same
 			
 			// Resolver
-			int resolverId = rs.getInt(24);
-			String resolverUsername = rs.getString(25);
-			String resolverPassword = rs.getString(26);
-			String resolverFirstname = rs.getString(27);
-			String resolverLastname = rs.getString(28);
-			String resolverEmail = rs.getString(29);
+			int resolverId = rs.getInt(21);
+			String resolverUsername = rs.getString(22);
+			String resolverPassword = rs.getString(23);
+			String resolverFirstname = rs.getString(24);
+			String resolverLastname = rs.getString(25);
+			String resolverEmail = rs.getString(26);
 			User resolver;
 			if (resolverId == 0) {
 				resolver = null;
 			} else {
 				resolver = new User(resolverId, resolverUsername, resolverPassword, resolverFirstname, resolverLastname, resolverEmail, resolverRoleObj);
 			}
-			// resolver role_id 30 <- same
-			// re_role 31 <- same
+			// resolver role_id 27 <- same
+			// re_role 28 <- same
 			
 			Reimbursement newReimb = new Reimbursement(reimbId, reimbAmount, reimbSubmitted, reimbResolved, reimbDescription, null, author, resolver, statusObj, typeObj);
 			reimbursements.add(newReimb);
@@ -211,7 +209,7 @@ public class ReimbursementDAO {
 	public Reimbursement getReimbursementById(int id) throws SQLException {
 		String sql = "SELECT * " +
 				"FROM " +
-				"(SELECT r.id as reimb_id, r.*, status.*, type.*, author.*, author.role_id as au_role, resolver.*, resolver.role_id as re_role " +
+				"(SELECT r.id as reimb_id, r.id, r.amount, r.submitted, r.resolved, r.description, r.author, r.resolver, status.*, type.*, author.*, author.role_id as au_role, resolver.*, resolver.role_id as re_role " +
 				"FROM reimbursements r " +
 				"INNER JOIN r_status status " +
 				"ON r.status_id = status.id " +
@@ -240,55 +238,54 @@ public class ReimbursementDAO {
 			Timestamp reimbSubmitted = rs.getTimestamp(4);
 			Timestamp reimbResolved = rs.getTimestamp(5);
 			String reimbDescription = rs.getString(6);
-			// receipt is 7
-			//int reimbAuthorId = rs.getInt(8); 
-			int reimbResolverId = rs.getInt(9); // for logic, resolver can be null
+			//int reimbAuthorId = rs.getInt(7); 
+			int reimbResolverId = rs.getInt(8); // for logic, resolver can be null
 			// reimbStatusId 10
 			// reimbTypeId 11
-			int statusId = rs.getInt(12);
-			String status = rs.getString(13);
+			int statusId = rs.getInt(9);
+			String status = rs.getString(10);
 			Status statusObj = new Status(statusId, status);
 			
-			int typeId = rs.getInt(14);
-			String type = rs.getString(15);
+			int typeId = rs.getInt(11);
+			String type = rs.getString(12);
 			Type typeObj = new Type(typeId, type);
 			
 			// ROLES
-			int authorRoleId = rs.getInt(32);
-			String authorRole = rs.getString(33);
+			int authorRoleId = rs.getInt(29);
+			String authorRole = rs.getString(30);
 			Role authorRoleObj = new Role(authorRoleId, authorRole);
 			
-			int resolverRoleId = rs.getInt(34);
-			String resolverRole = rs.getString(35);
+			int resolverRoleId = rs.getInt(31);
+			String resolverRole = rs.getString(32);
 			Role resolverRoleObj = new Role(resolverRoleId, resolverRole);
 			
 			// Author
-			int authorId = rs.getInt(16);
-			String authorUsername = rs.getString(17);
-			String authorPassword = rs.getString(18);
-			String authorFirstname = rs.getString(19);
-			String authorLastname = rs.getString(20);
-			String authorEmail = rs.getString(21);
+			int authorId = rs.getInt(13);
+			String authorUsername = rs.getString(14);
+			String authorPassword = rs.getString(15);
+			String authorFirstname = rs.getString(16);
+			String authorLastname = rs.getString(17);
+			String authorEmail = rs.getString(18);
 			User author = new User(authorId, authorUsername, authorPassword, authorFirstname, authorLastname, authorEmail, authorRoleObj);
 			
-			// author role_id 22 <- same
-			// au_role 23 <- same
+			// author role_id 19 <- same
+			// au_role 20 <- same
 			
 			// Resolver
-			int resolverId = rs.getInt(24);
-			String resolverUsername = rs.getString(25);
-			String resolverPassword = rs.getString(26);
-			String resolverFirstname = rs.getString(27);
-			String resolverLastname = rs.getString(28);
-			String resolverEmail = rs.getString(29);
+			int resolverId = rs.getInt(21);
+			String resolverUsername = rs.getString(22);
+			String resolverPassword = rs.getString(23);
+			String resolverFirstname = rs.getString(24);
+			String resolverLastname = rs.getString(25);
+			String resolverEmail = rs.getString(26);
 			User resolver;
 			if (resolverId == 0) {
 				resolver = null;
 			} else {
 				resolver = new User(resolverId, resolverUsername, resolverPassword, resolverFirstname, resolverLastname, resolverEmail, resolverRoleObj);
 			}
-			// resolver role_id 30 <- same
-			// re_role 31 <- same
+			// resolver role_id 27 <- same
+			// re_role 28 <- same
 			
 			Reimbursement newReimb = new Reimbursement(reimbId, reimbAmount, reimbSubmitted, reimbResolved, reimbDescription, null, author, resolver, statusObj, typeObj);
 			
@@ -342,6 +339,7 @@ public class ReimbursementDAO {
 		int count = stmt.executeUpdate();
 		
 		if (count == 1) {
+			con.commit();
 			return true;
 		}
 		
@@ -365,6 +363,7 @@ public class ReimbursementDAO {
 		int count = stmt.executeUpdate();
 		
 		if (count == 1) {
+			con.commit();
 			return true;
 		}
 		

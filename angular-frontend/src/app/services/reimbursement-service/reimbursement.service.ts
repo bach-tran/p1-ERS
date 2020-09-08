@@ -8,8 +8,8 @@ import { Reimbursement } from 'src/app/models/reimbursement';
 })
 export class ReimbursementService {
 
-  empReimbDataCache: Reimbursement[];
-  managerReimbDataCache: Reimbursement[];
+  // empReimbDataCache: Reimbursement[];
+  // managerReimbDataCache: Reimbursement[];
 
   constructor(private http: HttpClient, private router: Router) { }
 
@@ -20,7 +20,7 @@ export class ReimbursementService {
 
     (await response).sort((a, b) => b.id - a.id);
 
-    this.empReimbDataCache = await response;
+    // this.empReimbDataCache = await response;
 
     return response;
   }
@@ -32,7 +32,7 @@ export class ReimbursementService {
 
     (await response).sort((a, b) => b.id - a.id);
 
-    this.managerReimbDataCache = await response;
+    // this.managerReimbDataCache = await response;
 
     return response;
   }
