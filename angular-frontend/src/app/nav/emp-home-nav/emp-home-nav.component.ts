@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from 'src/app/services/auth-service/authentication.service';
 
 @Component({
   selector: 'app-emp-home-nav',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmpHomeNavComponent implements OnInit {
 
-  constructor() { }
+  isManager: boolean;
+
+  constructor(private authService: AuthenticationService) {
+    this.isManager = this.authService.getUser().role.role === 'MANAGER';
+   }
 
   ngOnInit(): void {
   }

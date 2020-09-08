@@ -64,7 +64,7 @@ export class ReimbursementTableManagerComponent implements OnInit {
     }
   }
 
-  sleep(milliseconds) {
+  sleep(milliseconds): void {
     const date = Date.now();
     let currentDate = null;
     do {

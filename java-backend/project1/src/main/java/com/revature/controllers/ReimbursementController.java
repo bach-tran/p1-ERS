@@ -92,7 +92,7 @@ public class ReimbursementController {
 				log.info("Attempting to add reimbursement");
 				session = req.getSession(false);
 				
-				this.authService.guard(session, new Role[] {new Role(1, "EMPLOYEE")});
+				this.authService.guard(session, new Role[] {new Role(1, "EMPLOYEE"), new Role(2, "MANAGER")});
 				
 				Part partAmount = req.getPart("amount");
 				Part partDescription = req.getPart("description");

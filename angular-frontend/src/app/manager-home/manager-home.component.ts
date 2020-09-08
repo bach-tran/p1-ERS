@@ -17,6 +17,9 @@ export class ManagerHomeComponent implements OnInit {
     if (!(await this.authService.checkAuthorization())) {
       alert('Login session expired.');
       this.router.navigate(['login']);
+    } else if (this.authService.getUser().role.role === 'EMPLOYEE') {
+      alert('User not authorized');
+      this.router.navigate(['login']);
     }
 
     this.fullName = this.authService.getUser().firstName + ' ' + this.authService.getUser().lastName;

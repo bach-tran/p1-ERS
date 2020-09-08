@@ -20,6 +20,8 @@ export class AuthenticationService {
         withCredentials: true
       }).toPromise();
 
+      this.setUser(await response);
+
       return response;
   }
 
