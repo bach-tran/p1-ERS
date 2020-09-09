@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ReimbursementService } from 'src/app/services/reimbursement-service/reimbursement.service';
 import { Reimbursement } from 'src/app/models/reimbursement';
 import { AuthenticationService } from 'src/app/services/auth-service/authentication.service';
+import { saveAs } from 'file-saver';
 
 @Component({
   selector: 'app-reimbursement-table',
@@ -22,6 +23,19 @@ export class ReimbursementTableComponent implements OnInit {
   async ngOnInit(): Promise<void> {
     // this.reimbursements = this.reimService.empReimbDataCache;
     await this.getReimbursementsUser();
+  }
+
+  downloadReceipt(id: number): void {
+    console.log('downloading receipt id ' + id);
+    this.reimService.getReceipt(id).subscribe(data => {
+      if (data.type === 'image/jpeg') {
+        saveAs(data, `receipt_${id}.jpeg`);
+      } else if (data.type === 'image/png') {
+        saveAs(data, `receipt_${id}.png`);
+      } else if (data.type === 'image/gif') {
+        saveAs(data, `receipt_${id}.gif`);
+      }
+    });
   }
 
   async getReimbursementsUser(): Promise<void> {

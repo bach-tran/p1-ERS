@@ -33,12 +33,14 @@ public class FrontController extends HttpServlet {
 	private ReimbursementController reimbursementController;
 	private LoginController loginController;
 	private LogoutController logoutController;
+	private DownloadController downloadController;
 	
 	public FrontController() {
 		super();
 		loginController = new LoginController();
 		logoutController = new LogoutController();
 		reimbursementController = new ReimbursementController();
+		downloadController = new DownloadController();
 	}
 
 	@Override
@@ -78,6 +80,10 @@ public class FrontController extends HttpServlet {
 			case "reimb":
 				log.info("ReimbursementController invoked");
 				reimbursementController.process(req, resp, portions);
+				break;
+			case "download":
+				log.info("DownloadController invoked");
+				downloadController.process(req, resp, portions);
 				break;
 			default:
 				resp.setStatus(400);

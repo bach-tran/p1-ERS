@@ -1,4 +1,4 @@
-<div class="container" id="reimbursement-table">
+<div class="w-75 m-auto" id="reimbursement-table">
   <div class="row" id="table-head">
     <div class="col-6">
       <p class="display-4">Reimbursements</p>
@@ -54,7 +54,7 @@
         <td>{{ row.resolver == null ? "--" : row.resolver.firstName + " " + row.resolver.lastName }}</td>
         <td>{{ row.status == null ? "--" : row.status.status }}</td>
         <td>{{ row.type == null ? "--" : row.type.type }}</td>
-        <td><button class="btn btn-dark">Download</button></td>
+        <td><button (click)="downloadReceipt(row.id)" class="btn btn-dark">Download</button></td>
       </tr>
     </tbody>
   </table>

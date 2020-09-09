@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Reimbursement } from 'src/app/models/reimbursement';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -47,5 +48,14 @@ export class ReimbursementService {
     const response = this.http.put(`http://localhost:8080/project1/reimb/${id}/?operation=deny`, {}, {
       withCredentials: true,
     }).toPromise();
+  }
+
+  public getReceipt(id: number): Observable<Blob> {
+    const response = this.http.get(`http://localhost:8080/project1/download/reimb/${id}`, {
+      responseType: 'blob',
+      withCredentials: true
+    });
+
+    return response;
   }
 }

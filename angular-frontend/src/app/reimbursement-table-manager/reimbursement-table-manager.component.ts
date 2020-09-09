@@ -1,3 +1,4 @@
+import { saveAs } from 'file-saver';
 import { AuthenticationService } from '../services/auth-service/authentication.service';
 import { Router } from '@angular/router';
 import { ReimbursementService } from 'src/app/services/reimbursement-service/reimbursement.service';
@@ -22,6 +23,19 @@ export class ReimbursementTableManagerComponent implements OnInit {
     // this.reimbursements = this.reimService.managerReimbDataCache;
 
     this.getReimbursements();
+  }
+
+  downloadReceipt(id: number): void {
+    console.log('downloading receipt id ' + id);
+    this.reimService.getReceipt(id).subscribe(data => {
+      if (data.type === 'image/jpeg') {
+        saveAs(data, `receipt_${id}.jpeg`);
+      } else if (data.type === 'image/png') {
+        saveAs(data, `receipt_${id}.png`);
+      } else if (data.type === 'image/gif') {
+        saveAs(data, `receipt_${id}.gif`);
+      }
+    });
   }
 
   async getReimbursements(): Promise<void> {

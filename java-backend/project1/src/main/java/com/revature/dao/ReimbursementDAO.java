@@ -323,6 +323,7 @@ public class ReimbursementDAO {
 	}
 	
 	public boolean approveReimbursementById(int id, int resolverId) throws SQLException {
+		con.setAutoCommit(false);
 		String sql = "UPDATE reimbursements "
 				+ "SET resolved = ?, "
 				+ "resolver = ?, "
@@ -340,6 +341,8 @@ public class ReimbursementDAO {
 		
 		if (count == 1) {
 			con.commit();
+			
+			con.setAutoCommit(true);
 			return true;
 		}
 		
@@ -347,6 +350,7 @@ public class ReimbursementDAO {
 	}
 	
 	public boolean denyReimbursementById(int id, int resolverId) throws SQLException {
+		con.setAutoCommit(false);
 		String sql = "UPDATE reimbursements "
 				+ "SET resolved = ?, "
 				+ "resolver = ?, "
@@ -364,10 +368,31 @@ public class ReimbursementDAO {
 		
 		if (count == 1) {
 			con.commit();
+			
+			con.setAutoCommit(true);
 			return true;
 		}
 		
 		return false;
+	}
+	
+	public byte[] getReimbReceipt(int id) throws SQLException {
+		String sql = "SELECT r.receipt "
+				+ "FROM reimbursements r "
+				+ "WHERE r.id = ?";
+		
+		PreparedStatement stmt = con.prepareStatement(sql);
+		stmt.setInt(1, id);
+		
+		ResultSet rs = stmt.executeQuery();
+		
+		while (rs.next()) {
+			byte[] array = rs.getBytes(1);
+			
+			return array;
+		}
+		
+		return null;
 	}
 	
 //	public static void main(String[] args) throws SQLException {
