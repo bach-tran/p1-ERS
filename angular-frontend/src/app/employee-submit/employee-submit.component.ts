@@ -57,6 +57,22 @@ export class EmployeeSubmitComponent implements OnInit {
 
   }
 
+
+  checkAmount(): void {
+    let numberDecimals: number;
+
+    if (Math.floor(this.amount) === this.amount) {
+      numberDecimals = 0;
+    } else {
+      numberDecimals = this.amount.toString().split('.')[1].length || 0;
+    }
+
+    if (numberDecimals > 2) {
+      this.amount = parseFloat((Math.floor(this.amount * 100) / 100).toFixed(2));
+    }
+
+  }
+
   selected(): void {
   }
 }
