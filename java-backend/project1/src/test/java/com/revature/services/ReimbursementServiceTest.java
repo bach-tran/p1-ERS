@@ -9,9 +9,14 @@ import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.util.Arrays;
+
+import javax.servlet.http.Part;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -136,13 +141,29 @@ public class ReimbursementServiceTest {
 	}
 	
 	@Test
-	public void testPartToString() {
+	public void testPartToString() throws IOException {
+		Part part = mock(Part.class);
 		
+		InputStream stream = new ByteArrayInputStream("test".getBytes());
+		
+		when(part.getInputStream()).thenReturn(stream);
+		
+		String expected = "test";
+		
+		assertEquals("test", reimbService.partToString(part));
 	}
 	
 	@Test
-	public void testPartToByteArray() {
+	public void testPartToByteArray() throws IOException {
+		Part part = mock(Part.class);
 		
+		// Make part a 'String' value
+		InputStream stream = new ByteArrayInputStream("test".getBytes());
+		when(part.getInputStream()).thenReturn(stream);
+		
+		byte[] expected = "test".getBytes();
+		
+		assertTrue(Arrays.equals(expected, reimbService.partToByteArray(part)));
 	}
 
 }
