@@ -2,6 +2,7 @@ import { AuthenticationService } from '../services/auth-service/authentication.s
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-employee-submit',
@@ -43,7 +44,7 @@ export class EmployeeSubmitComponent implements OnInit {
         fd.append('type', this.type.toString());
         fd.append('file', this.selectedFile, this.selectedFile.name);
 
-        await this.http.post(`http://localhost:8080/project1/reimb`, fd, {
+        await this.http.post(environment.API_URL + ':' + environment.PORT + `/project1/reimb`, fd, {
           withCredentials: true
         }).toPromise();
 

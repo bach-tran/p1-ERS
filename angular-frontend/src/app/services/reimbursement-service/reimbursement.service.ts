@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { environment } from '../../../environments/environment';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Reimbursement } from 'src/app/models/reimbursement';
@@ -15,7 +16,7 @@ export class ReimbursementService {
   constructor(private http: HttpClient, private router: Router) { }
 
   public async getUserReimbursements(id: number): Promise<Reimbursement[]> {
-    const response = this.http.get<Reimbursement[]>(`http://localhost:8080/project1/reimb/user/${id}`, {
+    const response = this.http.get<Reimbursement[]>(environment.API_URL + ':' + environment.PORT + `/project1/reimb/user/${id}`, {
       withCredentials: true
     }).toPromise();
 
@@ -27,7 +28,7 @@ export class ReimbursementService {
   }
 
   public async getReimbursements(): Promise<Reimbursement[]> {
-    const response = this.http.get<Reimbursement[]>(`http://localhost:8080/project1/reimb`, {
+    const response = this.http.get<Reimbursement[]>(environment.API_URL + ':' + environment.PORT + `/project1/reimb`, {
       withCredentials: true
     }).toPromise();
 
@@ -39,19 +40,19 @@ export class ReimbursementService {
   }
 
   public async approveReimbursement(id: number): Promise<void> {
-    const response = this.http.put(`http://localhost:8080/project1/reimb/${id}/?operation=approve`, {}, {
+    const response = this.http.put(environment.API_URL + ':' + environment.PORT + `/project1/reimb/${id}/?operation=approve`, {}, {
       withCredentials: true,
     }).toPromise();
   }
 
   public async denyReimbursement(id: number): Promise<void> {
-    const response = this.http.put(`http://localhost:8080/project1/reimb/${id}/?operation=deny`, {}, {
+    const response = this.http.put(environment.API_URL + ':' + environment.PORT + `/project1/reimb/${id}/?operation=deny`, {}, {
       withCredentials: true,
     }).toPromise();
   }
 
   public getReceipt(id: number): Observable<Blob> {
-    const response = this.http.get(`http://localhost:8080/project1/download/reimb/${id}`, {
+    const response = this.http.get(environment.API_URL + ':' + environment.PORT + `/project1/download/reimb/${id}`, {
       responseType: 'blob',
       withCredentials: true
     });
