@@ -6,6 +6,10 @@
 	<artifactId>project1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
+	
+	<build>
+		<finalName>project1</finalName>
+	</build>
 
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->

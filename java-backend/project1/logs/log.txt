@@ -2015,3 +2015,159 @@
 2020-09-09 17:18:32 INFO  LoginController:58 - POST request body parsed
 2020-09-09 17:18:32 INFO  LoginController:59 - username provided: bach_tran
 2020-09-09 17:18:32 INFO  LoginController:61 - Invoking LoginService
+2020-09-09 22:37:40 INFO  DownloadController:54 - Processing request
+2020-09-09 22:37:40 INFO  DownloadController:70 - Attempting to GET download
+2020-09-09 22:37:40 INFO  DownloadController:54 - Processing request
+2020-09-09 22:37:40 INFO  DownloadController:54 - Processing request
+2020-09-09 22:37:40 INFO  DownloadController:54 - Processing request
+2020-09-09 22:37:40 INFO  DownloadController:54 - Processing request
+2020-09-09 22:37:40 INFO  DownloadController:70 - Attempting to GET download
+2020-09-09 22:37:40 INFO  DownloadController:54 - Processing request
+2020-09-09 22:37:40 INFO  DownloadController:54 - Processing request
+2020-09-09 22:37:40 INFO  DownloadController:70 - Attempting to GET download
+2020-09-09 22:37:42 INFO  LoginController:42 - Processing request
+2020-09-09 22:37:42 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-09 22:37:42 INFO  LoginController:42 - Processing request
+2020-09-09 22:37:43 INFO  LoginController:42 - Processing request
+2020-09-09 22:37:43 INFO  LoginController:42 - Processing request
+2020-09-09 22:37:43 INFO  LoginController:42 - Processing request
+2020-09-09 22:37:43 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-09 22:37:43 INFO  LoginController:58 - POST request body parsed
+2020-09-09 22:37:43 INFO  LoginController:59 - username provided: null
+2020-09-09 22:37:43 INFO  LoginController:61 - Invoking LoginService
+2020-09-09 22:37:43 INFO  LoginController:42 - Processing request
+2020-09-09 22:37:43 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-09 22:37:43 INFO  LoginController:58 - POST request body parsed
+2020-09-09 22:37:43 INFO  LoginController:59 - username provided: bach_tran
+2020-09-09 22:37:43 INFO  LoginController:61 - Invoking LoginService
+2020-09-09 22:37:43 INFO  LoginController:65 - Creating new session
+2020-09-09 22:37:43 INFO  LoginController:73 - bach_tran successfully logged in
+2020-09-09 22:37:44 INFO  LoginController:42 - Processing request
+2020-09-09 22:37:44 INFO  LoginController:109 - Session is active for User [id=1, username=bach_tran, password=12345, firstName=Bach, lastName=Tran, email=bach_tran@outlook.com, role=Role [id=1, role=EMPLOYEE]]
+2020-09-09 22:37:44 INFO  LoginController:42 - Processing request
+2020-09-09 22:37:44 INFO  LoginController:42 - Processing request
+2020-09-09 22:37:44 INFO  LoginController:79 - A request to login was received, but a session already exists.
+2020-09-09 22:37:45 INFO  LoginController:42 - Processing request
+2020-09-09 22:37:45 INFO  LoginController:42 - Processing request
+2020-09-09 22:37:45 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-09 22:37:45 INFO  LoginController:58 - POST request body parsed
+2020-09-09 22:37:45 INFO  LoginController:59 - username provided: null
+2020-09-09 22:37:45 INFO  LoginController:61 - Invoking LoginService
+2020-09-09 22:37:45 INFO  LoginController:65 - Creating new session
+2020-09-09 22:37:45 INFO  LoginController:73 - null successfully logged in
+2020-09-09 22:37:45 INFO  LoginController:42 - Processing request
+2020-09-09 22:37:46 INFO  LoginController:42 - Processing request
+2020-09-09 22:37:46 INFO  LoginController:42 - Processing request
+2020-09-09 22:37:46 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-09 22:37:46 INFO  LoginController:58 - POST request body parsed
+2020-09-09 22:37:46 INFO  LoginController:59 - username provided: bach_tran
+2020-09-09 22:37:46 INFO  LoginController:61 - Invoking LoginService
+2020-09-09 22:37:46 INFO  LogoutController:25 - Processing request
+2020-09-09 22:37:46 INFO  LogoutController:25 - Processing request
+2020-09-09 22:37:46 INFO  LogoutController:44 - A request to logout was made, but no session is active
+2020-09-09 22:37:46 INFO  LogoutController:25 - Processing request
+2020-09-09 22:37:46 INFO  LogoutController:25 - Processing request
+2020-09-09 22:40:41 INFO  DownloadController:54 - Processing request
+2020-09-09 22:40:41 INFO  DownloadController:70 - Attempting to GET download
+2020-09-09 22:40:41 INFO  DownloadController:54 - Processing request
+2020-09-09 22:40:41 INFO  DownloadController:54 - Processing request
+2020-09-09 22:40:41 INFO  DownloadController:54 - Processing request
+2020-09-09 22:40:41 INFO  DownloadController:54 - Processing request
+2020-09-09 22:40:41 INFO  DownloadController:70 - Attempting to GET download
+2020-09-09 22:40:41 INFO  DownloadController:54 - Processing request
+2020-09-09 22:40:41 INFO  DownloadController:54 - Processing request
+2020-09-09 22:40:41 INFO  DownloadController:70 - Attempting to GET download
+2020-09-09 22:40:43 INFO  LoginController:42 - Processing request
+2020-09-09 22:40:43 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-09 22:40:43 INFO  LoginController:42 - Processing request
+2020-09-09 22:40:43 INFO  LoginController:42 - Processing request
+2020-09-09 22:40:44 INFO  LoginController:42 - Processing request
+2020-09-09 22:40:44 INFO  LoginController:42 - Processing request
+2020-09-09 22:40:44 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-09 22:40:44 INFO  LoginController:58 - POST request body parsed
+2020-09-09 22:40:44 INFO  LoginController:59 - username provided: null
+2020-09-09 22:40:44 INFO  LoginController:61 - Invoking LoginService
+2020-09-09 22:40:44 INFO  LoginController:42 - Processing request
+2020-09-09 22:40:44 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-09 22:40:44 INFO  LoginController:58 - POST request body parsed
+2020-09-09 22:40:44 INFO  LoginController:59 - username provided: bach_tran
+2020-09-09 22:40:44 INFO  LoginController:61 - Invoking LoginService
+2020-09-09 22:40:44 INFO  LoginController:65 - Creating new session
+2020-09-09 22:40:44 INFO  LoginController:73 - bach_tran successfully logged in
+2020-09-09 22:40:44 INFO  LoginController:42 - Processing request
+2020-09-09 22:40:44 INFO  LoginController:109 - Session is active for User [id=1, username=bach_tran, password=12345, firstName=Bach, lastName=Tran, email=bach_tran@outlook.com, role=Role [id=1, role=EMPLOYEE]]
+2020-09-09 22:40:45 INFO  LoginController:42 - Processing request
+2020-09-09 22:40:45 INFO  LoginController:42 - Processing request
+2020-09-09 22:40:45 INFO  LoginController:79 - A request to login was received, but a session already exists.
+2020-09-09 22:40:46 INFO  LoginController:42 - Processing request
+2020-09-09 22:40:46 INFO  LoginController:42 - Processing request
+2020-09-09 22:40:46 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-09 22:40:46 INFO  LoginController:58 - POST request body parsed
+2020-09-09 22:40:46 INFO  LoginController:59 - username provided: null
+2020-09-09 22:40:46 INFO  LoginController:61 - Invoking LoginService
+2020-09-09 22:40:46 INFO  LoginController:65 - Creating new session
+2020-09-09 22:40:46 INFO  LoginController:73 - null successfully logged in
+2020-09-09 22:40:46 INFO  LoginController:42 - Processing request
+2020-09-09 22:40:46 INFO  LoginController:42 - Processing request
+2020-09-09 22:40:46 INFO  LoginController:42 - Processing request
+2020-09-09 22:40:46 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-09 22:40:46 INFO  LoginController:58 - POST request body parsed
+2020-09-09 22:40:46 INFO  LoginController:59 - username provided: bach_tran
+2020-09-09 22:40:46 INFO  LoginController:61 - Invoking LoginService
+2020-09-09 22:40:46 INFO  LogoutController:25 - Processing request
+2020-09-09 22:40:46 INFO  LogoutController:25 - Processing request
+2020-09-09 22:40:46 INFO  LogoutController:44 - A request to logout was made, but no session is active
+2020-09-09 22:40:46 INFO  LogoutController:25 - Processing request
+2020-09-09 22:40:46 INFO  LogoutController:25 - Processing request
+2020-09-09 22:41:16 INFO  DownloadController:54 - Processing request
+2020-09-09 22:41:16 INFO  DownloadController:70 - Attempting to GET download
+2020-09-09 22:41:16 INFO  DownloadController:54 - Processing request
+2020-09-09 22:41:16 INFO  DownloadController:54 - Processing request
+2020-09-09 22:41:16 INFO  DownloadController:54 - Processing request
+2020-09-09 22:41:16 INFO  DownloadController:54 - Processing request
+2020-09-09 22:41:16 INFO  DownloadController:70 - Attempting to GET download
+2020-09-09 22:41:16 INFO  DownloadController:54 - Processing request
+2020-09-09 22:41:16 INFO  DownloadController:54 - Processing request
+2020-09-09 22:41:16 INFO  DownloadController:70 - Attempting to GET download
+2020-09-09 22:41:17 INFO  LoginController:42 - Processing request
+2020-09-09 22:41:17 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-09 22:41:17 INFO  LoginController:42 - Processing request
+2020-09-09 22:41:18 INFO  LoginController:42 - Processing request
+2020-09-09 22:41:18 INFO  LoginController:42 - Processing request
+2020-09-09 22:41:18 INFO  LoginController:42 - Processing request
+2020-09-09 22:41:18 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-09 22:41:18 INFO  LoginController:58 - POST request body parsed
+2020-09-09 22:41:18 INFO  LoginController:59 - username provided: null
+2020-09-09 22:41:18 INFO  LoginController:61 - Invoking LoginService
+2020-09-09 22:41:18 INFO  LoginController:42 - Processing request
+2020-09-09 22:41:18 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-09 22:41:18 INFO  LoginController:58 - POST request body parsed
+2020-09-09 22:41:18 INFO  LoginController:59 - username provided: bach_tran
+2020-09-09 22:41:18 INFO  LoginController:61 - Invoking LoginService
+2020-09-09 22:41:18 INFO  LoginController:65 - Creating new session
+2020-09-09 22:41:18 INFO  LoginController:73 - bach_tran successfully logged in
+2020-09-09 22:41:19 INFO  LoginController:42 - Processing request
+2020-09-09 22:41:19 INFO  LoginController:109 - Session is active for User [id=1, username=bach_tran, password=12345, firstName=Bach, lastName=Tran, email=bach_tran@outlook.com, role=Role [id=1, role=EMPLOYEE]]
+2020-09-09 22:41:19 INFO  LoginController:42 - Processing request
+2020-09-09 22:41:20 INFO  LoginController:42 - Processing request
+2020-09-09 22:41:20 INFO  LoginController:79 - A request to login was received, but a session already exists.
+2020-09-09 22:41:20 INFO  LoginController:42 - Processing request
+2020-09-09 22:41:20 INFO  LoginController:42 - Processing request
+2020-09-09 22:41:20 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-09 22:41:20 INFO  LoginController:58 - POST request body parsed
+2020-09-09 22:41:20 INFO  LoginController:59 - username provided: null
+2020-09-09 22:41:20 INFO  LoginController:61 - Invoking LoginService
+2020-09-09 22:41:20 INFO  LoginController:65 - Creating new session
+2020-09-09 22:41:20 INFO  LoginController:73 - null successfully logged in
+2020-09-09 22:41:20 INFO  LoginController:42 - Processing request
+2020-09-09 22:41:21 INFO  LoginController:42 - Processing request
+2020-09-09 22:41:21 INFO  LoginController:42 - Processing request
+2020-09-09 22:41:21 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-09 22:41:21 INFO  LoginController:58 - POST request body parsed
+2020-09-09 22:41:21 INFO  LoginController:59 - username provided: bach_tran
+2020-09-09 22:41:21 INFO  LoginController:61 - Invoking LoginService
+2020-09-09 22:41:21 INFO  LogoutController:25 - Processing request
+2020-09-09 22:41:21 INFO  LogoutController:25 - Processing request
+2020-09-09 22:41:21 INFO  LogoutController:44 - A request to logout was made, but no session is active
+2020-09-09 22:41:21 INFO  LogoutController:25 - Processing request
+2020-09-09 22:41:21 INFO  LogoutController:25 - Processing request
