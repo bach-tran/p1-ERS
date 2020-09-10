@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API_URL: `http://localhost`,
+  API_URL: `http://ec2-18-218-144-68.us-east-2.compute.amazonaws.com/`,
   PORT: `8085`
 };
 
