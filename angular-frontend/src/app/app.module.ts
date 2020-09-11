@@ -24,6 +24,8 @@ import { EmployeeSubmitComponent } from './employee-submit/employee-submit.compo
 import { EmpSubmitNavComponent } from './nav/emp-submit-nav/emp-submit-nav.component';
 import { ReimbursementTableManagerComponent } from './reimbursement-table-manager/reimbursement-table-manager.component';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +50,8 @@ import { ReimbursementTableManagerComponent } from './reimbursement-table-manage
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [AuthenticationService, ReimbursementService],
   bootstrap: [AppComponent]

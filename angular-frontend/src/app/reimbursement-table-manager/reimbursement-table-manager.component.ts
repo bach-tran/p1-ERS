@@ -5,6 +5,7 @@ import { ReimbursementService } from 'src/app/services/reimbursement-service/rei
 import { Component, OnInit } from '@angular/core';
 import { Reimbursement } from '../models/reimbursement';
 import { I18nSelectPipe } from '@angular/common';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-reimbursement-table-manager',
@@ -17,7 +18,14 @@ export class ReimbursementTableManagerComponent implements OnInit {
   reimbursements: Reimbursement[];
   statusType: string = 'all';
 
-  constructor(private reimService: ReimbursementService, private router: Router, private authService: AuthenticationService) { }
+  viewedReceiptId: number;
+  viewedReceiptAuthor: string;
+  imageToShow: any;
+  isImageLoading: boolean;
+  mySrc;
+
+  constructor(private reimService: ReimbursementService, private router: Router, private authService: AuthenticationService,
+              private sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
     // this.reimbursements = this.reimService.managerReimbDataCache;
@@ -37,6 +45,32 @@ export class ReimbursementTableManagerComponent implements OnInit {
       }
     });
   }
+
+  getImage(id: number, name: string): void {
+    this.viewedReceiptId = id;
+    this.viewedReceiptAuthor = name;
+
+    this.isImageLoading = true;
+    this.reimService.getReceipt(id).subscribe(data => {
+      this.createImageFromBlob(data);
+      this.isImageLoading = false;
+    }, error => {
+      this.isImageLoading = false;
+      console.log(error);
+    });
+
+  }
+
+  createImageFromBlob(image: Blob) {
+    const reader = new FileReader();
+    reader.addEventListener('load', () => {
+       this.imageToShow = reader.result;
+    }, false);
+
+    if (image) {
+       reader.readAsDataURL(image);
+    }
+ }
 
   async getReimbursements(): Promise<void> {
     this.refreshing = true;
