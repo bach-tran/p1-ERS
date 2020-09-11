@@ -2275,3 +2275,1667 @@
 2020-09-10 21:06:31 INFO  LoginController:58 - POST request body parsed
 2020-09-10 21:06:31 INFO  LoginController:59 - username provided: bach_tran
 2020-09-10 21:06:31 INFO  LoginController:61 - Invoking LoginService
+2020-09-10 21:21:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:21:16 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:25:24 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:25:24 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:27:31 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:27:31 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:27:31 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:27:37 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:27:37 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:27:37 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:29:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:29:34 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:29:34 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:35:49 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:35:49 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:35:49 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:35:54 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:35:54 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:35:54 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:36:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:36:56 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:36:56 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:38:36 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:38:36 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:38:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:38:52 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:45:06 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:45:06 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:45:06 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:45:06 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:45:06 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:47:31 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:47:31 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:47:31 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:47:31 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:47:31 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:51:58 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:51:58 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:51:58 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:51:58 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:51:58 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:52:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:52:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:52:16 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:52:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:52:16 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:52:16 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:52:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:52:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:52:39 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:52:40 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:52:40 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:52:40 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:53:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:53:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:53:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:53:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:53:01 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:53:01 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:53:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:53:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:53:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:53:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:53:16 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:53:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:53:16 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:53:16 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:53:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:53:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:54:19 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:54:19 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:54:19 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:54:19 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:54:19 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:54:19 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:54:19 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:54:19 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:54:19 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:54:19 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:54:19 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:54:19 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:54:19 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:54:19 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:54:19 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:54:19 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:54:19 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:55:08 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:55:08 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:55:08 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:55:08 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:55:08 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:55:08 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:55:08 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:55:08 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:55:08 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:55:08 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:55:08 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:55:08 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:55:08 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:55:08 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:55:08 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:55:08 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:55:08 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:55:08 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:55:08 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:55:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:55:35 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:56:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:56:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:56:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:56:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:03 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:56:03 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:56:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:26 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:26 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:26 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:26 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:26 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:56:26 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:26 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:26 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:56:26 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:26 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:26 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:56:26 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:26 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:26 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:56:26 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:26 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:26 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:56:26 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:26 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:56:26 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:56:26 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:26 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:26 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:26 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:26 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:56:50 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:50 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:50 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:50 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:50 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:56:50 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:50 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:50 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:56:50 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:50 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:50 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:56:50 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:50 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:50 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:56:50 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:50 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:50 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:56:50 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:50 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:56:50 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:56:50 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:50 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:50 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:56:50 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:56:50 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:09 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:09 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:09 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:09 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:09 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:09 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:09 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:09 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:09 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:09 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:09 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:09 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:57:09 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:57:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:09 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:09 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:15 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:15 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:15 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:15 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:15 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:15 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:15 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:15 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:15 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:15 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:15 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:15 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:15 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:15 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:15 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:15 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:15 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:15 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:15 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:57:15 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:57:15 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:15 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:15 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:15 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:39 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:39 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:39 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:39 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:39 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:39 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:39 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:57:39 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:57:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:53 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:53 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:53 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:53 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:53 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:53 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:53 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:53 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:53 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:53 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:53 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:53 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:53 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:53 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:53 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:53 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:53 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:53 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:53 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:53 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:53 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:53 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:57:53 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:57:53 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:53 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:53 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:53 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:57:53 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:57:53 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:57:53 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:59:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:59:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:59:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:59:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:59:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:59:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:59:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:59:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:59:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:59:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:59:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:59:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:59:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:59:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:59:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:59:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:59:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:59:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:59:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:59:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:59:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:59:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:59:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:59:03 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 21:59:03 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 21:59:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:59:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:59:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:59:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 21:59:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 21:59:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 21:59:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:00:49 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:00:49 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:00:49 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:00:49 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:00:49 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:00:49 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:00:49 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:00:49 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:00:49 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:00:49 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:00:49 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:00:49 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:00:49 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:00:49 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:00:49 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:00:49 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:00:49 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:00:49 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:00:49 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:00:49 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:00:49 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:00:49 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:00:49 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:00:49 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:00:49 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:00:49 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:00:49 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:00:49 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:00:49 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:00:49 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:00:49 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:00:49 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:00:49 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:14 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:14 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:14 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:14 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:14 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:05:14 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:14 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:14 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:14 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:14 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:14 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:05:14 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:14 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:14 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:05:14 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:14 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:14 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:05:14 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:14 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:14 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:05:14 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:14 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:14 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:05:14 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:14 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:05:14 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:05:14 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:14 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:14 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:14 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:14 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:05:14 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:14 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:14 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:40 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:40 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:40 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:40 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:40 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:05:40 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:40 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:40 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:40 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:05:40 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:40 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:40 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:05:40 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:40 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:40 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:05:40 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:40 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:40 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:05:40 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:40 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:40 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:05:40 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:40 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:40 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:05:40 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:40 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:05:40 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:05:40 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:40 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:40 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:40 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:05:40 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:05:40 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:40 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:05:40 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:06:24 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:06:24 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:06:24 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:06:24 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:06:24 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:06:24 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:06:24 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:06:24 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:06:24 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:06:24 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:06:24 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:06:24 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:06:24 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:06:24 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:06:24 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:06:24 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:06:24 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:06:24 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:06:24 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:06:24 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:06:24 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:06:24 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:06:24 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:06:24 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:06:24 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:06:24 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:06:24 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:06:24 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:06:24 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:06:24 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:06:24 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:06:24 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:06:24 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:06:24 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:06:24 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:06:24 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:07:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:07:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:07:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:07:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:07:39 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:07:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:07:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:07:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:07:39 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:07:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:07:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:07:39 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:07:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:07:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:07:39 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:07:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:07:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:07:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:07:39 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:07:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:07:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:07:39 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:07:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:07:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:07:39 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:07:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:07:39 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:07:39 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:07:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:07:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:07:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:07:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:07:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:07:39 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:07:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:07:39 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:07:39 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:16 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:08:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:16 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:08:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:16 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:08:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:16 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:08:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:16 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:08:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:16 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:08:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:16 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:08:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:16 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:08:16 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:08:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:16 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:08:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:42 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:08:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:42 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:08:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:42 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:08:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:42 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:08:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:42 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:08:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:42 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:08:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:42 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:08:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:42 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:08:42 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:08:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:08:42 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:08:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:08:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:03 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:09:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:03 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:09:03 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:09:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:11 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:11 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:09:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:11 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:11 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:11 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:11 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:11 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:11 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:09:11 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:09:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:11 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:17 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:17 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:17 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:17 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:17 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:17 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:17 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:17 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:17 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:09:17 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:17 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:17 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:17 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:17 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:17 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:17 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:17 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:17 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:17 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:17 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:17 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:17 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:17 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:17 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:17 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:17 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:17 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:09:17 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:09:17 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:17 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:17 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:17 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:17 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:17 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:17 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:17 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:17 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:27 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:27 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:27 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:27 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:27 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:27 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:27 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:27 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:27 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:09:27 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:27 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:27 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:27 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:27 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:27 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:27 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:27 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:27 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:27 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:27 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:27 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:27 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:27 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:27 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:27 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:27 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:27 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:09:27 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:09:27 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:27 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:09:27 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:27 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:27 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:27 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:27 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:09:27 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:09:27 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:27 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:09:27 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:12:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:12:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:12:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:12:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:12:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:12:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:12:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:12:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:12:01 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:12:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:12:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:12:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:12:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:12:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:12:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:12:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:12:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:12:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:12:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:12:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:12:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:12:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:12:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:12:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:12:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:12:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:12:01 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:12:01 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:12:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:12:01 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:12:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:12:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:12:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:12:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:12:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:12:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:12:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:12:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:12:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:12:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:34 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:13:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:34 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:13:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:34 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:13:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:34 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:13:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:34 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:13:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:34 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:13:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:34 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:13:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:34 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:13:34 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:13:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:34 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:13:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:34 INFO  ReimbursementController:193 - Reimbursement id 10 approved by John Doe
+2020-09-10 22:13:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:34 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:13:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:52 INFO  ReimbursementController:197 - Reimbursement id 10 denied by John Doe
+2020-09-10 22:13:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:52 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:52 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:52 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:13:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:52 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:52 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:13:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:52 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:52 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:13:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:52 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:52 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:13:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:52 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:52 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:13:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:52 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:52 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:13:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:52 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:52 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:13:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:52 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:13:52 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:13:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:52 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:13:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:52 INFO  ReimbursementController:193 - Reimbursement id 10 approved by John Doe
+2020-09-10 22:13:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:52 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:52 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:13:52 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:13:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:52 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:13:52 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:03 INFO  ReimbursementController:197 - Reimbursement id 10 denied by John Doe
+2020-09-10 22:14:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:14:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:03 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:14:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:14:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:14:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:14:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:14:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:14:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:03 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:14:03 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:14:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:03 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:14:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:03 INFO  ReimbursementController:193 - Reimbursement id 10 approved by John Doe
+2020-09-10 22:14:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:03 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:14:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:03 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:03 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:09 INFO  ReimbursementController:197 - Reimbursement id 10 denied by John Doe
+2020-09-10 22:14:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:09 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:09 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:09 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:14:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:09 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:09 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:14:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:09 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:09 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:14:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:09 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:09 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:14:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:09 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:09 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:14:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:09 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:09 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:14:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:09 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:09 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:14:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:09 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:14:09 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:14:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:09 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:14:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:09 INFO  ReimbursementController:193 - Reimbursement id 10 approved by John Doe
+2020-09-10 22:14:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:09 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:09 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:14:09 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:14:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:09 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:14:09 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:197 - Reimbursement id 10 denied by John Doe
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:34 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:34 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:34 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:34 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:34 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:34 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:15:34 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:193 - Reimbursement id 10 approved by John Doe
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:34 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:34 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:197 - Reimbursement id 10 denied by John Doe
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:42 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:42 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:42 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:42 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:42 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:42 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:15:42 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:193 - Reimbursement id 10 approved by John Doe
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:15:42 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:15:42 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:16:27 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:197 - Reimbursement id 10 denied by John Doe
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:00 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:00 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:00 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:236 - Reimbursements successfully written to response
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:00 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:00 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:00 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:21:00 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:193 - Reimbursement id 10 approved by John Doe
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:00 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:00 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:34 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:34 INFO  ReimbursementController:197 - Reimbursement id 10 denied by John Doe
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:35 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:35 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:35 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:236 - Reimbursements successfully written to response
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:35 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:35 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:35 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:21:35 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:193 - Reimbursement id 10 approved by John Doe
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:35 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:35 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:197 - Reimbursement id 10 denied by John Doe
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:44 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:44 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:44 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:236 - Reimbursements successfully written to response
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:44 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:44 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:44 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:21:44 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:193 - Reimbursement id 10 approved by John Doe
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:21:44 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:21:44 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:197 - Reimbursement id 10 denied by John Doe
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:236 - Reimbursements successfully written to response
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:22:01 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:193 - Reimbursement id 10 approved by John Doe
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:197 - Reimbursement id 10 denied by John Doe
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:51 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:51 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:51 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:236 - Reimbursements successfully written to response
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:51 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:51 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:51 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:22:51 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:193 - Reimbursement id 10 approved by John Doe
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:22:51 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:22:51 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:197 - Reimbursement id 10 denied by John Doe
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:16 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:16 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:16 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:236 - Reimbursements successfully written to response
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:16 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:16 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:16 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:24:16 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:193 - Reimbursement id 10 approved by John Doe
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:16 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:16 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:25 INFO  ReimbursementController:197 - Reimbursement id 10 denied by John Doe
+2020-09-10 22:24:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:25 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:25 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:25 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:25 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:25 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:24:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:25 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:25 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:25 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:25 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:25 INFO  ReimbursementController:236 - Reimbursements successfully written to response
+2020-09-10 22:24:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:25 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:25 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:25 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:25 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:25 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:25 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:25 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:24:25 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:24:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:25 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:24:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:26 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:26 INFO  ReimbursementController:193 - Reimbursement id 10 approved by John Doe
+2020-09-10 22:24:26 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:26 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:26 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:26 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:26 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:26 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:26 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:26 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:26 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:26 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:26 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:197 - Reimbursement id 10 denied by John Doe
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:56 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:56 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:56 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:236 - Reimbursements successfully written to response
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:56 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:56 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:56 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:24:56 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:193 - Reimbursement id 10 approved by John Doe
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:24:56 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:24:56 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:197 - Reimbursement id 10 denied by John Doe
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:11 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:11 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:11 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:236 - Reimbursements successfully written to response
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:11 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:11 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:11 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:26:11 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:193 - Reimbursement id 10 approved by John Doe
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:11 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:11 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:197 - Reimbursement id 10 denied by John Doe
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:25 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:25 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:25 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:236 - Reimbursements successfully written to response
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:25 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:25 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:25 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:26:25 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:193 - Reimbursement id 10 approved by John Doe
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:25 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:25 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:197 - Reimbursement id 10 denied by John Doe
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:47 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:47 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:47 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:236 - Reimbursements successfully written to response
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:236 - Reimbursements successfully written to response
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:47 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:47 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:47 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:26:47 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:193 - Reimbursement id 10 approved by John Doe
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:26:47 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:26:47 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:27:00 INFO  DownloadController:54 - Processing request
+2020-09-10 22:27:00 INFO  DownloadController:70 - Attempting to GET download
+2020-09-10 22:27:00 INFO  DownloadController:54 - Processing request
+2020-09-10 22:27:00 INFO  DownloadController:54 - Processing request
+2020-09-10 22:27:00 INFO  DownloadController:54 - Processing request
+2020-09-10 22:27:00 INFO  DownloadController:54 - Processing request
+2020-09-10 22:27:00 INFO  DownloadController:70 - Attempting to GET download
+2020-09-10 22:27:00 INFO  DownloadController:54 - Processing request
+2020-09-10 22:27:00 INFO  DownloadController:54 - Processing request
+2020-09-10 22:27:00 INFO  DownloadController:70 - Attempting to GET download
+2020-09-10 22:27:00 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:00 INFO  ReimbursementController:197 - Reimbursement id 10 denied by John Doe
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:27:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:27:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:27:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:236 - Reimbursements successfully written to response
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:236 - Reimbursements successfully written to response
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:27:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:27:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:27:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:73 - Attempting to retrieve all reimbursements
+2020-09-10 22:27:01 INFO  ReimbursementController:86 - Reimbursements successfully written to response
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:171 - Reimbursement successfully written to response
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:193 - Reimbursement id 10 approved by John Doe
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:27:01 INFO  ReimbursementController:127 - Reimbursement successfully added
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:66 - Processing request
+2020-09-10 22:27:01 INFO  ReimbursementController:91 - Attempting to add reimbursement
+2020-09-10 22:27:01 INFO  LogoutController:25 - Processing request
+2020-09-10 22:27:01 INFO  LogoutController:25 - Processing request
+2020-09-10 22:27:01 INFO  LogoutController:44 - A request to logout was made, but no session is active
+2020-09-10 22:27:01 INFO  LogoutController:25 - Processing request
+2020-09-10 22:27:01 INFO  LogoutController:25 - Processing request
+2020-09-10 22:27:02 INFO  LoginController:42 - Processing request
+2020-09-10 22:27:02 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-10 22:27:02 INFO  LoginController:42 - Processing request
+2020-09-10 22:27:03 INFO  LoginController:42 - Processing request
+2020-09-10 22:27:03 INFO  LoginController:42 - Processing request
+2020-09-10 22:27:03 INFO  LoginController:42 - Processing request
+2020-09-10 22:27:03 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-10 22:27:03 INFO  LoginController:58 - POST request body parsed
+2020-09-10 22:27:03 INFO  LoginController:59 - username provided: null
+2020-09-10 22:27:03 INFO  LoginController:61 - Invoking LoginService
+2020-09-10 22:27:03 INFO  LoginController:42 - Processing request
+2020-09-10 22:27:03 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-10 22:27:03 INFO  LoginController:58 - POST request body parsed
+2020-09-10 22:27:03 INFO  LoginController:59 - username provided: bach_tran
+2020-09-10 22:27:03 INFO  LoginController:61 - Invoking LoginService
+2020-09-10 22:27:03 INFO  LoginController:65 - Creating new session
+2020-09-10 22:27:03 INFO  LoginController:73 - bach_tran successfully logged in
+2020-09-10 22:27:04 INFO  LoginController:42 - Processing request
+2020-09-10 22:27:04 INFO  LoginController:109 - Session is active for User [id=1, username=bach_tran, password=12345, firstName=Bach, lastName=Tran, email=bach_tran@outlook.com, role=Role [id=1, role=EMPLOYEE]]
+2020-09-10 22:27:04 INFO  LoginController:42 - Processing request
+2020-09-10 22:27:04 INFO  LoginController:42 - Processing request
+2020-09-10 22:27:04 INFO  LoginController:79 - A request to login was received, but a session already exists.
+2020-09-10 22:27:05 INFO  LoginController:42 - Processing request
+2020-09-10 22:27:05 INFO  LoginController:42 - Processing request
+2020-09-10 22:27:05 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-10 22:27:05 INFO  LoginController:58 - POST request body parsed
+2020-09-10 22:27:05 INFO  LoginController:59 - username provided: null
+2020-09-10 22:27:05 INFO  LoginController:61 - Invoking LoginService
+2020-09-10 22:27:05 INFO  LoginController:65 - Creating new session
+2020-09-10 22:27:05 INFO  LoginController:73 - null successfully logged in
+2020-09-10 22:27:05 INFO  LoginController:42 - Processing request
+2020-09-10 22:27:06 INFO  LoginController:42 - Processing request
+2020-09-10 22:27:06 INFO  LoginController:42 - Processing request
+2020-09-10 22:27:06 INFO  LoginController:54 - Session or currentUser is null, attempting to log in...
+2020-09-10 22:27:06 INFO  LoginController:58 - POST request body parsed
+2020-09-10 22:27:06 INFO  LoginController:59 - username provided: bach_tran
+2020-09-10 22:27:06 INFO  LoginController:61 - Invoking LoginService

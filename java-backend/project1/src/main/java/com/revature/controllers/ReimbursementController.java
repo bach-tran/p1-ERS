@@ -110,7 +110,8 @@ public class ReimbursementController {
 				
 				if (partFile != null) {
 					byte[] fileByte = this.reimbService.partToByteArray(partFile);
-					String[] fileInfo = partFile.getSubmittedFileName().split("\\.");
+					String filename = partFile.getSubmittedFileName();
+					String[] fileInfo = filename.split("\\.");
 					
 					String fileName = fileInfo[0];
 					String extension = fileInfo[1];
