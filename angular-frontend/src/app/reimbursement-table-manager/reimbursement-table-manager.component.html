@@ -16,7 +16,7 @@
                 <strong class="d-block text-center m-2" style="font-size: 1.1rem">Filter Requests By</strong>
               </div>
             </div>
-            <div class="row">
+            <div class="row btn-group">
               <button (click)="statusType = 'all'" class="btn btn-info btn-large">All</button>
               <button (click)="statusType = 'approved'"class="btn btn-success btn-large">Approved</button>
               <button (click)="statusType = 'denied'" class="btn btn-danger btn-large">Denied</button>
@@ -57,9 +57,11 @@
         <td>{{ row.status == null ? "--" : row.status.status }}</td>
         <td>{{ row.type == null ? "--" : row.type.type }}</td>
         <td>
-          <button class="btn btn-dark mb-2" (click)="downloadReceipt(row.id)">Download</button>
-          <button class="btn btn-warning" data-toggle="modal" data-target="#exampleModalLong" (click)="getImage(row.id, row.author.firstName + ' ' + row.author.lastName)">View</button>
-        </td>
+          <div class="btn-group">
+            <button class="btn btn-dark" (click)="downloadReceipt(row.id)">Download</button>
+            <button class="btn btn-warning" data-toggle="modal" data-target="#exampleModalLong" (click)="getImage(row.id, row.author.firstName + ' ' + row.author.lastName)">View</button>
+          </div>
+          </td>
         <td *ngIf="row.status.status === 'PENDING' && !(statusType === 'approved') && !(statusType === 'denied')"><button (click)="approveReimbursement(row.id)" class="btn btn-success">Approve</button></td>
         <td *ngIf="row.status.status === 'PENDING' && !(statusType === 'approved') && !(statusType === 'denied')"><button (click)="denyReimbursement(row.id)" class="btn btn-danger">Deny</button></td>
       </tr>
