@@ -12,7 +12,7 @@ DROP TABLE IF EXISTS users CASCADE;
 CREATE TABLE users (
 	id SERIAL PRIMARY KEY,
 	username VARCHAR(50) NOT NULL,
-	password VARCHAR(50) NOT NULL,
+	password VARCHAR(64) NOT NULL,
 	first_name VARCHAR(100) NOT NULL,
 	last_name VARCHAR(100) NOT NULL,
 	email VARCHAR(150) NOT NULL,
@@ -25,7 +25,10 @@ CREATE TABLE users (
 );
 
 INSERT INTO users (username, password, first_name, last_name, email, role_id)
-VALUES ('bach_tran', '12345', 'Bach', 'Tran', 'bach_tran@outlook.com', 1);
+VALUES ('bach_tran', '5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5', 'Bach', 'Tran', 'bach_tran@outlook.com', 1),
+('john_doe', 'b822f1cd2dcfc685b47e83e3980289fd5d8e3ff3a82def24d7d1d68bb272eb32', 'John', 'Doe', 'john_doe@outlook.com', 2),
+('jane_doe', 'cf80cd8aed482d5d1527d7dc72fceff84e6326592848447d2dc0b0e87dfc9a90', 'Jane', 'Doe', 'jane_doe@outlook.com', 1),
+('bob_rodriguez', '6ca13d52ca70c883e0f0bb101e425a89e8624de51db2d2392593af6a84118090', 'Bob', 'Rodriguez', 'bob_rodriguez@outlook.com', 2);
 
 DROP TABLE IF EXISTS r_status CASCADE;
 CREATE TABLE r_status (
