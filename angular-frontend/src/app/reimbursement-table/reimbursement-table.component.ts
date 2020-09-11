@@ -16,6 +16,12 @@ export class ReimbursementTableComponent implements OnInit {
   public reimbursements: Reimbursement[];
   public refreshing: boolean;
 
+  viewedReceiptId: number;
+  viewedReceiptAuthor: string;
+  imageToShow: any;
+  isImageLoading: boolean;
+  mySrc;
+
   constructor(private reimService: ReimbursementService, private authService: AuthenticationService, private router: Router) {
     this.statusType = 'all';
   }
@@ -37,6 +43,32 @@ export class ReimbursementTableComponent implements OnInit {
       }
     });
   }
+
+  getImage(id: number, name: string): void {
+    this.viewedReceiptId = id;
+    this.viewedReceiptAuthor = name;
+
+    this.isImageLoading = true;
+    this.reimService.getReceipt(id).subscribe(data => {
+      this.createImageFromBlob(data);
+      this.isImageLoading = false;
+    }, error => {
+      this.isImageLoading = false;
+      console.log(error);
+    });
+
+  }
+
+  createImageFromBlob(image: Blob) {
+    const reader = new FileReader();
+    reader.addEventListener('load', () => {
+       this.imageToShow = reader.result;
+    }, false);
+
+    if (image) {
+       reader.readAsDataURL(image);
+    }
+ }
 
   async getReimbursementsUser(): Promise<void> {
     this.refreshing = true;

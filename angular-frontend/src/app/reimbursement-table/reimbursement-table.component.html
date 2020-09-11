@@ -54,10 +54,38 @@
         <td>{{ row.resolver == null ? "--" : row.resolver.firstName + " " + row.resolver.lastName }}</td>
         <td>{{ row.status == null ? "--" : row.status.status }}</td>
         <td>{{ row.type == null ? "--" : row.type.type }}</td>
-        <td><button (click)="downloadReceipt(row.id)" class="btn btn-dark">Download</button></td>
+        <td>
+          <button (click)="downloadReceipt(row.id)" class="btn btn-dark">Download</button>
+          <button class="btn btn-warning" data-toggle="modal" data-target="#exampleModalLong" (click)="getImage(row.id, row.author.firstName + ' ' + row.author.lastName)">View</button>
+        </td>
       </tr>
     </tbody>
   </table>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">{{ 'Receipt ID: ' + this.viewedReceiptId + ' by ' + this.viewedReceiptAuthor }}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" [src]="imageToShow"
+          alt="Place image title"
+          *ngIf="!isImageLoading; else noImageFound">
+        <ng-template #noImageFound>
+            Image Loading...
+        </ng-template>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div id="space"></div>
