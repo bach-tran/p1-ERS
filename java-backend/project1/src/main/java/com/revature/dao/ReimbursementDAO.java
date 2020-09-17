@@ -312,7 +312,6 @@ public class ReimbursementDAO {
 		stmt.setInt(6, 1);
 		stmt.setInt(7, typeId);
 		
-		
 		int count = stmt.executeUpdate();
 		
 		if (count == 1) {
